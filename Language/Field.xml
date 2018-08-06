@@ -1,0 +1,634 @@
+<export>
+  <Item keyed_name="item_info" config_id="A01AEC00D438400B94E73182FCCC7CDB">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="BA29ECBB87B4442BBEBE5E28D4F9C68D">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_by_id" config_id="70572CAAB89C4AA3976689802F1735FC">
+    <property __name="label" en="Created User" ja="作成者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_on" config_id="1CA53369EBDC48388860BBD45FEB4958">
+    <property __name="label" en="Created Date" ja="作成日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="generation" config_id="066536B5A4AE4205B46202A07B4DCE23">
+    <property __name="label" en="generation" ja="バージョン" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="4DCCB7D5756F4A30B90EB8CB6EFC96AB">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_by_id" config_id="C853E03BEB7B49FC9CAC3BD1F0D70104">
+    <property __name="label" en="Update User" ja="更新者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_on" config_id="1F57584734BB447D88CCFE9B831E4B2A">
+    <property __name="label" en="Update Date" ja="更新日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="3E1D8B6BC0D248CAA71716FCC3DE4F2B">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_parameter_name" config_id="824C6C4FF36C41B2BE219B1C65C0B7BF">
+    <property __name="label" en="Parameter Name" ja="パラメータ名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_by_id" config_id="CC1B26626D444A219415BB24D97AE0D1">
+    <property __name="label" en="Created User" ja="作成者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_on" config_id="E737380ADB154B83A0991B4C2E1EC8CD">
+    <property __name="label" en="Created Date" ja="作成日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="BC8F71B255CA4AD8BE56045215CDBD54">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_by_id" config_id="7CF11C89906E47A7AE21404374AAF145">
+    <property __name="label" en="Update User" ja="更新者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_on" config_id="3BBD8AD83F54424682A4FE2929DF3A69">
+    <property __name="label" en="Update Date" ja="更新日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_config" config_id="677F3385A1C84AD3B4891DCFFBE759EE">
+    <property __name="label" en="Config" ja="コンフィグ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="0147DBE16D6E4994B35C02CCCD928566">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_dev_phase_name" config_id="4C4FB632B8264184AA43F365AA16068C">
+    <property __name="label" en="Development phase name" ja="開発フェーズ名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_name" config_id="CD029C9567AF425584F21B565F869514">
+    <property __name="label" en="Model Name" ja="モデル名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_no" config_id="0003C05D50D84B909E6556670D5B5B5B">
+    <property __name="label" en="Model No" ja="モデル番号" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_name" config_id="F35A2F50B4194AAAB995F42DA476914A">
+    <property __name="label" en="Project Name" ja="プロジェクト名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_verison" config_id="553E6D9467D44255AF65757EB8602846">
+    <property __name="label" en="Version" ja="バージョン" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="B722B26432564071A0638DA9112A3413">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_draft_model_name" config_id="C54CEC55605045948D200A46352CDD9D">
+    <property __name="label" en="Model Name" ja="モデル名称" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_draft_model_no" config_id="DE19E4EB296E48F3B378658921D4CDFB">
+    <property __name="label" en="Model No" ja="モデル番号" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="C0F3DB2B3F1249AB9BFE794C6785B4A7">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="DDA1249545EA4E99B0541E96EA6E197D">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_by_id" config_id="61C9ADD0D9C74F7CA9BDC34F8D84E081">
+    <property __name="label" en="Created User" ja="作成者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_on" config_id="938C2AD7E3D444C091F232AC7FA70DD3">
+    <property __name="label" en="Created Date" ja="作成日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="468B8D7FFD4040CFA1E9CFF5C0C6F2EB">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_by_id" config_id="5EC1D20D2AC04CFB879BF158030BAF29">
+    <property __name="label" en="Update User" ja="更新者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_on" config_id="57DF65CC91384BE79761431E051C4F0C">
+    <property __name="label" en="Update Date" ja="更新日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_config" config_id="088116AB7FD64266B256E3E6505FAD14">
+    <property __name="label" en="Config" ja="コンフィグ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="FF291F917FCC4193B7B8A919F799DEFE">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_name" config_id="508392AFD8FE4DF0A16F8C5FA6F62378">
+    <property __name="label" en="Model Name" ja="モデル名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_no" config_id="E06CFC1905004BDAB9DF7DB0AECAA550">
+    <property __name="label" en="Model No" ja="モデル番号" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_name" config_id="89185ED562854B889C7D7536A0133421">
+    <property __name="label" en="Project Name" ja="プロジェクト名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_by_id" config_id="98337022C81744BBAAA64FE9ED8B833A">
+    <property __name="label" en="Created User" ja="作成者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_on" config_id="6F8F40209AB8494BA3EBF4933D9CCF07">
+    <property __name="label" en="Created Date" ja="作成日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="DDD8D9C3224A4ECEA1BE5DC769C4D4C6">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_by_id" config_id="C133755D6449488FB39E3017A4740097">
+    <property __name="label" en="Update User" ja="更新者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_on" config_id="62BBC4A8FC374954BFE5DF07380AA617">
+    <property __name="label" en="Update Date" ja="更新日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_config" config_id="8823A094D969496FBA4BB474E70F9C14">
+    <property __name="label" en="Config" ja="コンフィグ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="9944BACD366A41859498A4156902BFF8">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_dev_phase_name" config_id="29D5835960954B04A4F90A6328F47EA8">
+    <property __name="label" en="Development phase name" ja="開発フェーズ名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_name" config_id="76E83256D8A245088B723355145EBF8C">
+    <property __name="label" en="Model Name" ja="モデル名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_no" config_id="ABF28562FB974271A5D6903A95C157EC">
+    <property __name="label" en="Model No" ja="モデル番号" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_name" config_id="8989FF28A957438092902A82BECD52B7">
+    <property __name="label" en="Project Name" ja="プロジェクト名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_stage" config_id="C0677CC2610E4E8AAF0D501552A26983">
+    <property __name="label" en="Stage" ja="ステージ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_version" config_id="1EF0FCD6BDE14A4481E7F3242D7FE3B2">
+    <property __name="label" en="Version" ja="バージョン" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_view_file" config_id="A55D01B6E33D49158101C1B35E82B37E">
+    <property __name="label" en="View File" ja="ビューファイル" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="DE1445E8FF604577B50B3FF72D6DB900">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="thumbnail" config_id="465DC142FAF44D3BB9684B6862404D1A">
+    <property __name="label" en="thumbnail" ja="サムネイル" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_image_file" config_id="471CED4FB81C4457A426A2532EC3A26E">
+    <property __name="label" en="Image" ja="イメージ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_index_no" config_id="3C285D0C23A44F20840FDFFBD4B5D01D">
+    <property __name="label" en="Index No." ja="Index No." />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_subsystem_name" config_id="A34103CE9FE64BD78A5C9F5E4AB71DEF">
+    <property __name="label" en="SubSystem Name" ja="サブシステム名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_by_id" config_id="C20CF2E74AC843E0939007DD4D8699F0">
+    <property __name="label" en="Created User" ja="作成者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_on" config_id="19061C55A5CE4094AA3AF85F74FD69CA">
+    <property __name="label" en="Created Date" ja="作成日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="generation" config_id="82493FACBF3443D486018B4A2A956EEE">
+    <property __name="label" en="generation" ja="バージョン" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="A81C0CCA8D544C9787F77007570E9311">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_by_id" config_id="09D25E4A97FD457FB7BA48056067BEBB">
+    <property __name="label" en="Update User" ja="更新者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_on" config_id="F8B2EEC42114453CA235BC5B092BDF12">
+    <property __name="label" en="Update Date" ja="更新日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_category" config_id="88C266403D6C4155BDC75DC67B5FBF50">
+    <property __name="label" en="Category" ja="カテゴリ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="9B5A859F858141019D2BB1A84F3D8A04">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_doc_name" config_id="D6BD79997CF14CDBA6C53A69E60A686C">
+    <property __name="label" en="Document Name" ja="文書名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_doc_no" config_id="EDAE290C796D4AE4A8423829E8F5E28F">
+    <property __name="label" en="Document No" ja="文書番号" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_by_id" config_id="8972F4FAB9F24F29948BED7A2B9B15CB">
+    <property __name="label" en="Created User" ja="作成者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_on" config_id="763A0B2B9DE74E23A17078E70CF8E47A">
+    <property __name="label" en="Created Date" ja="作成日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="3CE7DC101EBB4A3C8FCD99E25F624BC3">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_by_id" config_id="E44EB6A6025B4596989EF90287E92B34">
+    <property __name="label" en="Update User" ja="更新者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_on" config_id="CB1D71520201462E870211DDE39C5CA2">
+    <property __name="label" en="Update Date" ja="更新日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_config" config_id="C6628D3304774A72B927B5FDD2D727A1">
+    <property __name="label" en="Config" ja="コンフィグ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="AC82ADB17AF74DC494BA1712201B3560">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_dev_phase_name" config_id="8D9AB60365ED47F5B6781C2D8D323DB9">
+    <property __name="label" en="Development phase name" ja="開発フェーズ名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_name" config_id="9835D2911FFC47569F57709AA1AFD304">
+    <property __name="label" en="Model Name" ja="モデル名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_no" config_id="8E2062C77B1245D2B7E548313C56DF53">
+    <property __name="label" en="Model No" ja="モデル番号" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_name" config_id="5156B5F63D15438BA2276D61AD15BB68">
+    <property __name="label" en="Project Name" ja="プロジェクト名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_version" config_id="FE6404E4948745FF85EBA8D0C8A1AD43">
+    <property __name="label" en="Version" ja="バージョン" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="21FDDD15097946BEB92FF752DDBB2B7E">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="D1A56A9604774CDC877A9D0F1B96A56F">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_by_id" config_id="DA1660352B1F4F6590042DD10D60FC16">
+    <property __name="label" en="Created User" ja="作成者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_on" config_id="74936627BA2E4285A79A6F2BB9271FF9">
+    <property __name="label" en="Created Date" ja="作成日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="1EC7DE5D1D7949299A36D2155AC355DE">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_by_id" config_id="6DE2EE9C1C8F490997360587AC3109A8">
+    <property __name="label" en="Update User" ja="更新者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_on" config_id="952576641CF2479EB6542979A420FBF8">
+    <property __name="label" en="Update Date" ja="更新日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_config" config_id="A2262E9BA2B04754B2A439367EE10B3F">
+    <property __name="label" en="Config" ja="コンフィグ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="3D129BCE7428491A8A1CCC100F283847">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_name" config_id="90E01434CD59492FB9C8E80EBEF75485">
+    <property __name="label" en="Model Name" ja="モデル名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_no" config_id="8DE645D5EDB547C192E225B18E02345D">
+    <property __name="label" en="Model No" ja="モデル番号" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_name" config_id="7FCE27A7F7494D52B3ACCB979FCAB9A0">
+    <property __name="label" en="Project Name" ja="プロジェクト名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="1DF05A655CB242A6913853E745085D98">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="EADF5E058CB94901915EF645F5E9AA28">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_by_id" config_id="DD4ED065A2144481953BADDF5EFE100E">
+    <property __name="label" en="Created User" ja="作成者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="created_on" config_id="E58A6E7DD3DC4E4091704F5EA7F77272">
+    <property __name="label" en="Created Date" ja="作成日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="generation" config_id="D1365706052048EA9A78D074A189B17C">
+    <property __name="label" en="generation" ja="バージョン" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="FF67E308337A4AEF94C33C0F31C96E3E">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_by_id" config_id="259EEF87CDE945CAB5057E254890F02A">
+    <property __name="label" en="Update User" ja="更新者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="modified_on" config_id="E90802DC9A2A477FBCE1C705DC6826A0">
+    <property __name="label" en="Update Date" ja="更新日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="536C08BAB2D94D0380EC791FEE4AC648">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_sourcecode_name" config_id="2B7B8728D1344DD0BBE7358F7DD0226A">
+    <property __name="label" en="Source Code Name" ja="ソースコード名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="36B12F7AE6584C5F801F6C85AC494776">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="managed_by_id" config_id="5E75CA5894F949549CECAEEDECFB6D76">
+    <property __name="label" en="Last reviewer" ja="最終レビュー者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="owned_by_id" config_id="A28ED063BF314901B8B08F43314D725D">
+    <property __name="label" en="Initial reviewer" ja="初回レビュー者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="BCF46DE9BB2548FFAADEBD084D39746C">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_dev_phase_name" config_id="53C8C625F5684CE49BB501B333AA971B">
+    <property __name="label" en="Development phase name" ja="開発フェーズ名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_end_date" config_id="5CD6B80401C94CC7B3F5FB50BD87C833">
+    <property __name="label" en="End Date" ja="終了日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_name" config_id="A90C8FD8BBAD4E288234DC0587B692AB">
+    <property __name="label" en="Project Name" ja="プロジェクト名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_stage" config_id="B48D14E93EB647039893CCBF6EA86D9C">
+    <property __name="label" en="Stage" ja="ステージ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_start_date" config_id="17ED9857AFDE4A0D9ED835E9218E7F97">
+    <property __name="label" en="Start Date" ja="開始日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_state" config_id="FECFE1AF2D894DF0A56EE019E2C485B2">
+    <property __name="label" en="Status" ja="ステータス" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_version" config_id="DB90DF19F3CD467587C4BDE606EE00E7">
+    <property __name="label" en="Version" ja="バージョン" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="2E25B7B647F149C198213F1EF587900D">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="3470A0E7AA6E44EEA505625DCC0455E5">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="html0" config_id="2E0DAA1F91CE433784655CAAFB263FF6">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="current_state" config_id="08DFB1A93A4A40D588EAB117456E4112">
+    <property __name="label" en="Status" ja="ステータス" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="81705646A4BA47758F66C5CDDBC6FCB9">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="managed_by_id" config_id="FD589944D6814A7BB62CA148A9A43D5A">
+    <property __name="label" en="Reviewer" ja="レビュー者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_dr_end_dt" config_id="8A1D42A767CA470EAEDF5CBEADB7A014">
+    <property __name="label" en="End Date" ja="終了日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_dr_start_dt" config_id="9AFB17810EB44A5F8647DE72C57DF269">
+    <property __name="label" en="Start Date" ja="開始日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_draft_model_no" config_id="E9BBA9BE719646ED9CF810CD0366A15D">
+    <property __name="label" en="Model Name" ja="モデル番号" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_model_dr_no" config_id="DA9064CED77E4A6C818002A036ED97A8">
+    <property __name="label" en="DR No." ja="DR No." />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_remark" config_id="4BDD3A73E2DD42C0A35F4DF4C2BE701C">
+    <property __name="label" en="Remark" ja="申し送り事項" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_title" config_id="A0DE942A28824B5DA3D0C236ABCEDE41">
+    <property __name="label" en="Title" ja="タイトル" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="html0" config_id="19A276D7A04746BD94245AA43FE3F11C">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="DA46261CE16A4777833B4D450EF58EA3">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="C9614ED5A07646E19A871F211C97A3D0">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_customer" config_id="8723DDAD2FD74700B50F041B9EF19F4D">
+    <property __name="label" en="Customer" ja="顧客名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_delivery_date" config_id="23BA1B3AE07549A6BEF5BA039EB06A3B">
+    <property __name="label" en="Delivery Date" ja="納期" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="6A49886DC7EF4786AC56792D70CED10D">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project" config_id="FA7BC7B3770C4DAF92EDD729D6456EE6">
+    <property __name="label" en="WBS" ja="WBS" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_name" config_id="65CFA630C30044329130581371D4B53A">
+    <property __name="label" en="Project Name" ja="プロジェクト名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_no" config_id="6B6B8A5491C04A37810D0906382A1A65">
+    <property __name="label" en="Project No" ja="プロジェクト番号" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_purpose" config_id="A60DF99EEBF94D5FB38554D0945534E1">
+    <property __name="label" en="Project Purpose" ja="プロジェクト目的" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="BFB2A06421804350BE29DC568A7897AF">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="B59FE6190FFC4A539C07926853E5AB0F">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="managed_by_id" config_id="3F2A5BC9B3F64A38B2C04D20A3B3C9C0">
+    <property __name="label" en="Initial reviewer" ja="最終レビュー者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="owned_by_id" config_id="2D3132F4A4384AB4B33683288EC5AC4D">
+    <property __name="label" en="Last reviewer" ja="初回レビュー者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_category" config_id="9E5F56238C614A48A831E023EAC8E9D3">
+    <property __name="label" en="Category" ja="カテゴリ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_description" config_id="089D5CCF450C4C45BB35D2E3325A6AF5">
+    <property __name="label" en="Description" ja="備考" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_dev_phase_name" config_id="0427B94D51234F90AFFC2B29DFABC723">
+    <property __name="label" en="Development phase name" ja="開発フェーズ名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_end_date" config_id="BBCB810A57864F4AB04D12482593D0F2">
+    <property __name="label" en="End Date" ja="終了日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_name" config_id="F1E8C50303AE4B21B1304E77001DA7D6">
+    <property __name="label" en="Simulation Name" ja="シミュレーション名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_name" config_id="8DDF5DC81AA547EAA884D004ACA93736">
+    <property __name="label" en="Project Name" ja="プロジェクト名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_start_date" config_id="6752F16DE9494C7887B7A89E543228D1">
+    <property __name="label" en="Start Date" ja="開始日" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_state" config_id="2AF981724BE0452787A07C984FB0A420">
+    <property __name="label" en="Status" ja="ステータス" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_version" config_id="86AC18E274FC49A08F3927CB97D642B8">
+    <property __name="label" en="Version" ja="バージョン" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="3B6A20D383B1466CB470EFC9071FF52C">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="current_state" config_id="ED2F0490242F4DBD98C1F66D973D021E">
+    <property __name="label" en="Status" ja="ステータス" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="2B0869362AD64743917838E24F6B46D2">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="item_info" config_id="43F52099D2694E759BB6503CCE70E4C2">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="managed_by_id" config_id="88063AB567C549A692DFAFAC6FF5CCE9">
+    <property __name="label" en="Authorizer" ja="承認者" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_dev_phase_name" config_id="267592EA07BD45B1A3EBCA569EABFBD2">
+    <property __name="label" en="Development phase name" ja="開発フェーズ名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_project_name" config_id="B9B991ADDD1847DD90D9F27AE96C7472">
+    <property __name="label" en="Project Name" ja="プロジェクト名" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_release_no" config_id="5D489142528F43739058852B3F4CB7E6">
+    <property __name="label" en="Release No" ja="通知番号" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_stage" config_id="75C0BF375AE546E19217D07E4F9E3BBD">
+    <property __name="label" en="Stage" ja="ステージ" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_title" config_id="233B0FCDA4B54D3A973C41B0C69A7B24">
+    <property __name="label" en="Title" ja="タイトル" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="z_version" config_id="38DC2B3D92A947A8B5833614CDC0C31C">
+    <property __name="label" en="Version" ja="バージョン" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+  <Item keyed_name="html0" config_id="5BD80A47CE9F496AB7D3610BA6EDA9B5">
+    <property __name="label" en="" ja="" />
+    <property __name="legend" en="" ja="" />
+  </Item>
+</export>

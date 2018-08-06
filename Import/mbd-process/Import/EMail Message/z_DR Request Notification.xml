@@ -1,0 +1,14 @@
+﻿<AML>
+ <Item type="EMail Message" id="6BFF73D3B7D643CBBD28A341EBA12A8A" action="add">
+  <body_html>&lt;body&gt;
+&lt;p&gt;モデル設計が完了しました。&lt;p&gt;
+&lt;p&gt;以下のリンクより詳細を確認願います。&lt;/p&gt;
+&lt;a href='http://localhost/MBDSolution11SP9?StartItem=${Item/@type}:${Item/id}'&gt;DR番号：${Item/z_model_dr_no}&lt;/a&gt;
+&lt;p&gt;＊注意：本メールは送信専用です。このメールに返信しないで下さい。&lt;/p&gt;
+&lt;/body&gt;</body_html>
+  <body_plain />
+  <from_user keyed_name="Innovator Admin" type="User">30B991F927274FA3829655F50C99472E</from_user>
+  <subject>モデルレビュー依頼(DR番号： ${Item/z_model_dr_no})</subject>
+  <name>z_DR Request Notification</name>
+ </Item>
+</AML>

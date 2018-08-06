@@ -1,0 +1,213 @@
+﻿<AML>
+ <Item type="Workflow Map" id="25E096297F8149FFB914294F02A193F4" action="add">
+  <node_bg_color>       </node_bg_color>
+  <node_label1_color>       </node_label1_color>
+  <node_label1_font />
+  <node_label2_color>       </node_label2_color>
+  <node_label2_font />
+  <node_name_color>       </node_name_color>
+  <node_name_font />
+  <node_size />
+  <transition_line_color>       </transition_line_color>
+  <transition_name_color>       </transition_name_color>
+  <transition_name_font />
+  <name>z_DraftModelRelease</name>
+  <Relationships>
+   <Item type="Workflow Map Activity" action="add">
+    <related_id keyed_name="Cancel" type="Activity Template">
+     <Item type="Activity Template" id="74E2FFF83C1A4F99AD036464A9BDC5E5" action="add">
+      <can_delegate>0</can_delegate>
+      <can_refuse>0</can_refuse>
+      <consolidate_ondelegate>0</consolidate_ondelegate>
+      <expected_duration>0</expected_duration>
+      <icon>../images/Delete.svg</icon>
+      <is_auto>1</is_auto>
+      <is_end>1</is_end>
+      <is_start>0</is_start>
+      <message xml:lang="en">Please Review...</message>
+      <priority>1</priority>
+      <reminder_count>0</reminder_count>
+      <reminder_interval>0</reminder_interval>
+      <timeout_duration>0</timeout_duration>
+      <wait_for_all_inputs>0</wait_for_all_inputs>
+      <wait_for_all_votes>0</wait_for_all_votes>
+      <x>373</x>
+      <y>98</y>
+      <name>Cancel</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="Workflow Map">25E096297F8149FFB914294F02A193F4</source_id>
+   </Item>
+   <Item type="Workflow Map Activity" action="add">
+    <related_id keyed_name="Start" type="Activity Template">
+     <Item type="Activity Template" id="822A3E2461CD49BCBBC1C7613D1359DF" action="add">
+      <can_delegate>0</can_delegate>
+      <can_refuse>0</can_refuse>
+      <consolidate_ondelegate>0</consolidate_ondelegate>
+      <expected_duration>0</expected_duration>
+      <icon>../images/WorkflowStart.svg</icon>
+      <is_auto>1</is_auto>
+      <is_end>0</is_end>
+      <is_start>1</is_start>
+      <message xml:lang="en">Please Review...</message>
+      <priority>2</priority>
+      <reminder_count>0</reminder_count>
+      <reminder_interval>0</reminder_interval>
+      <timeout_duration>0</timeout_duration>
+      <wait_for_all_inputs>0</wait_for_all_inputs>
+      <wait_for_all_votes>0</wait_for_all_votes>
+      <x>20</x>
+      <y>19</y>
+      <name>Start</name>
+      <Relationships>
+       <Item type="Workflow Map Path" id="8F54610F43CE4720AA2047E367405DA2" action="add">
+        <authentication>none</authentication>
+        <is_default>1</is_default>
+        <is_override>0</is_override>
+        <name>BEGIN</name>
+        <related_id>8D644CFD65C74B9C94710BE4485E6106</related_id>
+        <segments />
+        <sort_order>128</sort_order>
+        <source_id keyed_name="Start" type="Activity Template">822A3E2461CD49BCBBC1C7613D1359DF</source_id>
+        <x>0</x>
+        <y>0</y>
+       </Item>
+      </Relationships>
+     </Item>
+    </related_id>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="Workflow Map">25E096297F8149FFB914294F02A193F4</source_id>
+   </Item>
+   <Item type="Workflow Map Activity" action="add">
+    <related_id keyed_name="Review" type="Activity Template">
+     <Item type="Activity Template" id="AD04094E7F82498FA6449940FC74B471" action="add">
+      <can_delegate>1</can_delegate>
+      <can_refuse>1</can_refuse>
+      <consolidate_ondelegate>0</consolidate_ondelegate>
+      <icon>../images/WorkflowNode.svg</icon>
+      <is_auto>0</is_auto>
+      <is_end>0</is_end>
+      <is_start>0</is_start>
+      <label xml:lang="en">Review</label>
+      <message xml:lang="en">Please Review...</message>
+      <wait_for_all_inputs>0</wait_for_all_inputs>
+      <wait_for_all_votes>0</wait_for_all_votes>
+      <x>226</x>
+      <y>20</y>
+      <name>Review</name>
+      <Relationships>
+       <Item type="Activity Template Assignment" id="DC3EF5D81A614DE785E384FE69802A4B" action="add">
+        <related_id keyed_name="Manager" type="Identity">
+         <Item type="Identity" action="get" select="id">
+          <name>Manager</name>
+         </Item>
+        </related_id>
+        <sort_order>128</sort_order>
+        <source_id keyed_name="Review" type="Activity Template">AD04094E7F82498FA6449940FC74B471</source_id>
+        <is_required>0</is_required>
+        <for_all_members>0</for_all_members>
+        <voting_weight>100</voting_weight>
+       </Item>
+       <Item type="Workflow Map Path" id="9CC9CB9BD7E344E9954AA0FFD20F398A" action="add">
+        <authentication>none</authentication>
+        <is_default>1</is_default>
+        <is_override>0</is_override>
+        <name>Approve</name>
+        <related_id>AE42F93B05104CA6B67618682B7EB9A0</related_id>
+        <segments />
+        <sort_order>128</sort_order>
+        <source_id keyed_name="Review" type="Activity Template">AD04094E7F82498FA6449940FC74B471</source_id>
+        <x>0</x>
+        <y>0</y>
+       </Item>
+       <Item type="Workflow Map Path" id="8E20D13765D74C749A28EC3C37174363" action="add">
+        <authentication>none</authentication>
+        <is_default>0</is_default>
+        <is_override>0</is_override>
+        <name>Disapproval</name>
+        <related_id>74E2FFF83C1A4F99AD036464A9BDC5E5</related_id>
+        <segments />
+        <sort_order>256</sort_order>
+        <source_id keyed_name="Review" type="Activity Template">AD04094E7F82498FA6449940FC74B471</source_id>
+        <x>46</x>
+        <y>55</y>
+       </Item>
+      </Relationships>
+     </Item>
+    </related_id>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="Workflow Map">25E096297F8149FFB914294F02A193F4</source_id>
+   </Item>
+   <Item type="Workflow Map Activity" action="add">
+    <related_id keyed_name="End" type="Activity Template">
+     <Item type="Activity Template" id="AE42F93B05104CA6B67618682B7EB9A0" action="add">
+      <can_delegate>0</can_delegate>
+      <can_refuse>0</can_refuse>
+      <consolidate_ondelegate>0</consolidate_ondelegate>
+      <icon>../Images/Checkmark.svg</icon>
+      <is_auto>1</is_auto>
+      <is_end>1</is_end>
+      <is_start>0</is_start>
+      <message xml:lang="en">Please Review...</message>
+      <wait_for_all_inputs>0</wait_for_all_inputs>
+      <wait_for_all_votes>0</wait_for_all_votes>
+      <x>377</x>
+      <y>20</y>
+      <name>End</name>
+     </Item>
+    </related_id>
+    <sort_order>512</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="Workflow Map">25E096297F8149FFB914294F02A193F4</source_id>
+   </Item>
+   <Item type="Workflow Map Activity" action="add">
+    <related_id keyed_name="In Work" type="Activity Template">
+     <Item type="Activity Template" id="8D644CFD65C74B9C94710BE4485E6106" action="add">
+      <can_delegate>1</can_delegate>
+      <can_refuse>1</can_refuse>
+      <consolidate_ondelegate>0</consolidate_ondelegate>
+      <icon>../images/WorkflowNode.svg</icon>
+      <is_auto>0</is_auto>
+      <is_end>0</is_end>
+      <is_start>0</is_start>
+      <label xml:lang="en">In Work</label>
+      <message xml:lang="en">Please Review...</message>
+      <wait_for_all_inputs>0</wait_for_all_inputs>
+      <wait_for_all_votes>0</wait_for_all_votes>
+      <x>117</x>
+      <y>19</y>
+      <name>In Work</name>
+      <Relationships>
+       <Item type="Activity Template Assignment" id="BA96157A83AC43B188D82F4AAC678C06" action="add">
+        <related_id keyed_name="Creator" type="Identity">
+         <Item type="Identity" action="get" select="id">
+          <name>Creator</name>
+         </Item>
+        </related_id>
+        <sort_order>128</sort_order>
+        <source_id keyed_name="In Work" type="Activity Template">8D644CFD65C74B9C94710BE4485E6106</source_id>
+        <is_required>0</is_required>
+        <for_all_members>0</for_all_members>
+        <voting_weight>100</voting_weight>
+       </Item>
+       <Item type="Workflow Map Path" id="F95C11BC40EA4393A46D6713D4A5CD69" action="add">
+        <authentication>none</authentication>
+        <is_default>1</is_default>
+        <is_override>0</is_override>
+        <name>Submit</name>
+        <related_id>AD04094E7F82498FA6449940FC74B471</related_id>
+        <segments />
+        <sort_order>128</sort_order>
+        <source_id keyed_name="In Work" type="Activity Template">8D644CFD65C74B9C94710BE4485E6106</source_id>
+        <x>0</x>
+        <y>0</y>
+       </Item>
+      </Relationships>
+     </Item>
+    </related_id>
+    <sort_order>640</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="Workflow Map">25E096297F8149FFB914294F02A193F4</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

@@ -1,0 +1,19 @@
+﻿<AML>
+ <Item type="Action" id="E69D039A65204DF79301DD2D9E8316BC" action="add">
+  <item_query>&lt;Item type="{@type}" id="{@id}" levels= "1" action="get" /&gt;</item_query>
+  <location>client</location>
+  <method keyed_name="z_GetSelectedItems" type="Method">
+   <Item type="Method" action="get" select="id">
+    <name>z_GetSelectedItems</name>
+   </Item>
+  </method>
+  <on_complete keyed_name="z_OpenModelReleaseItem" type="Method">
+   <Item type="Method" action="get" select="id">
+    <name>z_OpenModelReleaseItem</name>
+   </Item>
+  </on_complete>
+  <target>none</target>
+  <type>item</type>
+  <name>z_AddToModelRelease</name>
+ </Item>
+</AML>

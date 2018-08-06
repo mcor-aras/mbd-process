@@ -1,0 +1,180 @@
+﻿<AML>
+ <Item type="ItemType" id="FC5E69D8BAB34B55B17A06D43FAB0128" action="add">
+  <allow_private_permission>1</allow_private_permission>
+  <auto_search>0</auto_search>
+  <enforce_discovery>1</enforce_discovery>
+  <hide_where_used>0</hide_where_used>
+  <history_template keyed_name="Default" type="History Template">3BC16EF9E52B4F9792AB76BCE0492F29</history_template>
+  <implementation_type>table</implementation_type>
+  <instance_data>Z_DRAFTMODEL</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>1</is_versionable>
+  <label xml:lang="en">DraftModel</label>
+  <label_plural xml:lang="en">99.DraftModel</label_plural>
+  <large_icon>../Images/Model.svg</large_icon>
+  <manual_versioning>0</manual_versioning>
+  <open_icon>../Images/Model.svg</open_icon>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+  <show_parameters_tab>1</show_parameters_tab>
+  <structure_view>tabs on</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <name>z_DraftModel</name>
+  <Relationships>
+   <Item type="DiscussionTemplate" id="249EE084C1A348DE86A623562B1B2E03" action="add">
+    <file_selection_depth>-1</file_selection_depth>
+    <item_selection_depth>-1</item_selection_depth>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+    <visibility_supported>1</visibility_supported>
+    <Relationships>
+     <Item type="FeedTemplate" id="364848522D2C4C47BEB23A9D51646BDD" action="add">
+      <feed_type>Board</feed_type>
+      <reference>this</reference>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="249EE084C1A348DE86A623562B1B2E03" type="DiscussionTemplate">249EE084C1A348DE86A623562B1B2E03</source_id>
+      <Relationships>
+       <Item type="FileSelectorTemplate" id="635FA25789F94F578450E2BE7B9A0A18" action="add">
+        <filter>7869D76D50ED4BD4985BECB20B1102F7|992B142FCE6C4EF8B71417220CD7E92D|50AF497B7A114235979F882CEC8EFDF6|8A85DD9A6E0346F5AE423314E3650041</filter>
+        <reference>z_DraftModel SubSystem(z_image_file)</reference>
+        <sort_order>128</sort_order>
+        <source_id keyed_name="364848522D2C4C47BEB23A9D51646BDD" type="FeedTemplate">364848522D2C4C47BEB23A9D51646BDD</source_id>
+        <tooltip_template xml:lang="en">File ${File:filename} from ${ItemType:label} ${Item:keyed_name}</tooltip_template>
+       </Item>
+       <Item type="FileSelectorTemplate" id="366A9BAEF15A409BBA6BC35F690FFF4E" action="add">
+        <filter>7869D76D50ED4BD4985BECB20B1102F7|992B142FCE6C4EF8B71417220CD7E92D|50AF497B7A114235979F882CEC8EFDF6|8A85DD9A6E0346F5AE423314E3650041</filter>
+        <reference>z_DraftModel File(related_id)</reference>
+        <sort_order>256</sort_order>
+        <source_id keyed_name="364848522D2C4C47BEB23A9D51646BDD" type="FeedTemplate">364848522D2C4C47BEB23A9D51646BDD</source_id>
+        <tooltip_template xml:lang="en">File ${File:filename} from ${ItemType:label} ${Item:keyed_name}</tooltip_template>
+       </Item>
+      </Relationships>
+     </Item>
+     <Item type="DiscussionTemplateView" id="0A9E9AE5D7204360B8BB48222880B417" action="add">
+      <client>js</client>
+      <related_id keyed_name="5FA00C365F5A404FA17DE3F90646346C" type="SSVCPresentationConfiguration">
+       <Item type="SSVCPresentationConfiguration" id="5FA00C365F5A404FA17DE3F90646346C" action="add">
+        <discussion_panel_behavior>discPanelOff</discussion_panel_behavior>
+        <form_tooltip_template xml:lang="en">Form of ${ItemType:label} ${Item:keyed_name}</form_tooltip_template>
+        <sm_template keyed_name="F1E9620C1AB3408588708B68E18D51DE" type="SecureMessageViewTemplate">F1E9620C1AB3408588708B68E18D51DE</sm_template>
+        <name>5FA00C365F5A404FA17DE3F90646346C</name>
+       </Item>
+      </related_id>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="249EE084C1A348DE86A623562B1B2E03" type="DiscussionTemplate">249EE084C1A348DE86A623562B1B2E03</source_id>
+     </Item>
+    </Relationships>
+   </Item>
+   <Item type="Property" id="CF12E79F8C0A486599CE77AE46F0661D" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Model Name</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>20</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+    <name>z_draft_model_name</name>
+   </Item>
+   <Item type="View" id="A0DD3EE41B1148A784838A6D8D7B5273" action="add">
+    <client>js</client>
+    <related_id keyed_name="z_DraftModel" type="Form">AC0C4D3DD53D41068F374714077AAEC3</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <show_ssvc>1</show_ssvc>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="Item Action" id="3D9EA537A6D84FB7A3368BF7DA240A27" action="add">
+    <related_id keyed_name="Change Discussion Definition" type="Action">5B155B40AD8F405D812EF95BC5848214</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+   </Item>
+   <Item type="Item Action" id="8564219035A14E818B0B398666741301" action="add">
+    <related_id keyed_name="VC_AddItemsToBookmarks" type="Action">FD4D2BE9E2B14919BF1973842A556AFD</related_id>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+   </Item>
+   <Item type="Item Action" id="B13B325AF37F451AA3DE9D47A10885E1" action="add">
+    <related_id keyed_name="z_AddToModelRelease" type="Action">E69D039A65204DF79301DD2D9E8316BC</related_id>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+   </Item>
+   <Item type="TOC Access" id="1E996F058EEA49DEB26E44A51C578B9C" action="add">
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+    <category>Model</category>
+   </Item>
+   <Item type="Can Add" id="3CCEDBAB383B4D01B23EFF514FFAE6F0" action="add">
+    <can_add>1</can_add>
+    <related_id keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+   </Item>
+   <Item type="Allowed Permission" id="7268B06E04AE4C3D93C0BAF211AF7420" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="Administrators" type="Permission">5BE54C871FB14F6EBC11596D1A010D26</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+ <Item type="ItemType" id="FC5E69D8BAB34B55B17A06D43FAB0128" action="edit">
+  <Relationships>
+   <Item type="Property" id="87E5ED0F38F948DD9B767345F8C5FD9C" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>1</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <keyed_name_order>1</keyed_name_order>
+    <label xml:lang="en">Model No</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+    <name>z_draft_model_no</name>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='FC5E69D8BAB34B55B17A06D43FAB0128' and name='superseded_date'">
+    <column_alignment>left</column_alignment>
+    <data_type>date</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Superseded Date</label>
+    <pattern>short_date_time</pattern>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>3200</sort_order>
+    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+    <track_history>0</track_history>
+    <name>superseded_date</name>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

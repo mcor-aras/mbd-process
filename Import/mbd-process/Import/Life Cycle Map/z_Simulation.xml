@@ -1,0 +1,76 @@
+﻿<AML>
+ <Item type="Life Cycle Map" id="58367C9DE9834E3EB97596FB00EB7FBA" action="add">
+  <description />
+  <start_state keyed_name="In Work" type="Life Cycle State">E7E454A0B1F44D528A463C76AF111B30</start_state>
+  <name>z_Simulation</name>
+  <Relationships>
+   <Item type="Life Cycle State" id="C8743B6C511045408F0A274FD8C936AA" action="add">
+    <image>../images/LifeCycleState.svg</image>
+    <item_behavior>fixed</item_behavior>
+    <label xml:lang="en">Approved</label>
+    <set_is_released>1</set_is_released>
+    <set_not_lockable>1</set_not_lockable>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="z_Simulation" type="Life Cycle Map">58367C9DE9834E3EB97596FB00EB7FBA</source_id>
+    <x>303</x>
+    <y>19</y>
+    <name>Approved</name>
+   </Item>
+   <Item type="Life Cycle State" id="E36F59F63796485197F77C356AC3AD11" action="add">
+    <image>../images/LifeCycleState.svg</image>
+    <label xml:lang="en">In Review</label>
+    <set_is_released>0</set_is_released>
+    <set_not_lockable>0</set_not_lockable>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="z_Simulation" type="Life Cycle Map">58367C9DE9834E3EB97596FB00EB7FBA</source_id>
+    <x>153</x>
+    <y>19</y>
+    <name>In Review</name>
+   </Item>
+   <Item type="Life Cycle State" id="E7E454A0B1F44D528A463C76AF111B30" action="add">
+    <image>../images/LifeCycleState.svg</image>
+    <label xml:lang="en">In Work</label>
+    <set_is_released>0</set_is_released>
+    <set_not_lockable>0</set_not_lockable>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_Simulation" type="Life Cycle Map">58367C9DE9834E3EB97596FB00EB7FBA</source_id>
+    <x>20</x>
+    <y>20</y>
+    <name>In Work</name>
+   </Item>
+   <Item type="Life Cycle Transition" id="3DCE634B38C24AAAACEE61AC6F4211CF" action="add">
+    <from_state keyed_name="In Review" type="Life Cycle State">E36F59F63796485197F77C356AC3AD11</from_state>
+    <get_comment>0</get_comment>
+    <role keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</role>
+    <segments>103,100</segments>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="z_Simulation" type="Life Cycle Map">58367C9DE9834E3EB97596FB00EB7FBA</source_id>
+    <to_state keyed_name="In Work" type="Life Cycle State">E7E454A0B1F44D528A463C76AF111B30</to_state>
+    <x>-92</x>
+    <y>87</y>
+   </Item>
+   <Item type="Life Cycle Transition" id="A42ED15B9E2941BAA7BB429D477C99CA" action="add">
+    <from_state keyed_name="In Review" type="Life Cycle State">E36F59F63796485197F77C356AC3AD11</from_state>
+    <get_comment>0</get_comment>
+    <role keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</role>
+    <segments />
+    <sort_order>256</sort_order>
+    <source_id keyed_name="z_Simulation" type="Life Cycle Map">58367C9DE9834E3EB97596FB00EB7FBA</source_id>
+    <to_state keyed_name="Approved" type="Life Cycle State">C8743B6C511045408F0A274FD8C936AA</to_state>
+    <x>45</x>
+    <y>17</y>
+   </Item>
+   <Item type="Life Cycle Transition" id="5DBD8441A3644A439E0B5996B8F1D397" action="add">
+    <from_state keyed_name="In Work" type="Life Cycle State">E7E454A0B1F44D528A463C76AF111B30</from_state>
+    <get_comment>0</get_comment>
+    <role keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</role>
+    <segments />
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_Simulation" type="Life Cycle Map">58367C9DE9834E3EB97596FB00EB7FBA</source_id>
+    <to_state keyed_name="In Review" type="Life Cycle State">E36F59F63796485197F77C356AC3AD11</to_state>
+    <x>29</x>
+    <y>13</y>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

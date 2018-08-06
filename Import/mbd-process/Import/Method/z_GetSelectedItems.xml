@@ -1,0 +1,114 @@
+﻿<AML>
+ <Item type="Method" id="1BF58B950EB4483D9AF7DCE34F667FB9" action="add">
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[if(top.aras.isDirtyEx(inDom) || top.aras.isNew(inDom))
+	{
+		if(top.aras.confirm(top.aras.getResource("plm", "changeitem.saveit")))
+		{
+			var tmpOnSaveCommand;
+			if (top.onSaveCommand) tmpOnSaveCommand = top.onSaveCommand;
+			if (top.main && top.main.work && top.main.work.onSaveCommand) tmpOnSaveCommand = top.main.work.onSaveCommand;
+			tmpOnSaveCommand();
+		}
+		else
+		{
+			return;
+		}
+	}
+	// PE_GetSelectedItems
+	// Gets all the selected items, whether from a relationship grid, main grid or form and builds a
+	// collection for use in creating the change item
+	var thisType = this.getType();
+	var grid;
+	var idArray;
+	var sourceItemTypeName;
+	var isRelationship = false;
+
+	// Check whether the method is being called from a relationship grid, the main grid or on an
+	// individual item and build an array of item ids
+	var relTypeId = top.aras.getRelationshipTypeId(thisType);
+	if (relTypeId) {
+		isRelationship = true;
+
+		var relshipItemType = top.aras.getRelationshipType(relTypeId);
+		var sourceItemType = top.aras.getItemTypeDictionary(relshipItemType.getProperty("source_id"), "id");
+		sourceItemTypeName = sourceItemType.getProperty("name");
+	}
+
+	if ((isRelationship) && document &&
+     document.frames["relationships"] && document.frames["relationships"].document.frames) {
+		for (var i = 0; i < document.frames["relationships"].document.frames.length; i++) {
+			var relshipsFrame = document.frames["relationships"].document.frames[i];
+			if(relshipsFrame)  {
+				grid = relshipsFrame.grid;
+				if (grid && grid.getSelectedItemIds(",") && grid.getSelectedItemIds(",").length > 0) {
+					idArray = grid.getSelectedItemIds(",").split(",");
+				}
+			}
+		}
+	}
+	else if (top.main && top.main.work && top.main.work.gridApplet) {
+		grid = top.main.work.gridApplet;
+		idArray = grid.getSelectedItemIds(",").split(",");
+	}
+
+	if (!idArray) {
+		idArray = new Array();
+		for (var j = 0; j < this.getItemCount(); j++) {
+			idArray.push(this.getItemByIndex(j).getID());
+		}
+	}
+
+	// If this is the last item in the array then build an item collection to return
+	if (this.getID() == idArray[idArray.length - 1]) {
+		// Add a dummy item to start the result collection (removed later)
+		var resultItem = this.newItem("DeleteMe", "DeleteMe");
+		for (var k = 0; k < idArray.length; k++) {
+			var ccItem;
+
+			// When starting from a relationship, get the parent item from the cache and then retrieve the related item
+			if (isRelationship) {
+				var parentId = this.getProperty("source_id", "");
+				var parentItem = top.aras.getItemById(sourceItemTypeName, parentId, 0);
+				if (parentItem) {
+					ccItem = parentItem.selectSingleNode("Relationships/Item[@id='" + idArray[k] + "']");
+
+					//If item isn't cached, get 
+					if (!ccItem) {
+						ccItem = top.aras.getItemById(thisType, idArray[k], 0);
+					}
+
+					//get related Part
+					if (ccItem) {
+						ccItem = top.aras.getRelatedItem(ccItem);
+					}
+				}
+			}
+			else {
+				ccItem = top.aras.getItemById(thisType, idArray[k], 0);
+			}
+
+			// Add the item to the collection to be returned
+			if (ccItem) {
+				if (top.aras.isNew(ccItem)) {
+					top.aras.AlertError(top.aras.getResource("PLM", "affecteditem.add_not_saved_item", top.aras.getKeyedNameEx(ccItem)));
+					return;
+				}
+				var tempItem = this.newItem("", "");
+				tempItem.loadAML(ccItem.xml);
+				resultItem.appendItem(tempItem);
+			}
+		}
+		if (resultItem.getItemCount() < 2) { return; }
+
+		// Remove the dummy item
+		resultItem.removeItem(resultItem.getItemByIndex(0));
+
+		// Set the ChangeItem attribute for debugging purposes and return the results
+		//resultItem.getItemByIndex(0).setAttribute("ChangeItem", "Pending");
+		return resultItem;
+	}]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>z_GetSelectedItems</name>
+ </Item>
+</AML>

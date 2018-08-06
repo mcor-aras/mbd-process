@@ -1,0 +1,239 @@
+﻿<AML>
+ <Item type="ItemType" id="3AA8CE3142BC4E269AA99E73484676EF" action="add">
+  <allow_private_permission>1</allow_private_permission>
+  <auto_search>0</auto_search>
+  <enforce_discovery>1</enforce_discovery>
+  <hide_where_used>0</hide_where_used>
+  <history_template keyed_name="Default" type="History Template">3BC16EF9E52B4F9792AB76BCE0492F29</history_template>
+  <implementation_type>table</implementation_type>
+  <instance_data>Z_VERSION</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>0</is_versionable>
+  <label xml:lang="en">Version</label>
+  <label_plural xml:lang="en">Version</label_plural>
+  <large_icon>../Images/NumericList.svg</large_icon>
+  <open_icon>../Images/NumericList.svg</open_icon>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+  <show_parameters_tab>1</show_parameters_tab>
+  <structure_view>tabs on</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <name>z_Version</name>
+  <Relationships>
+   <Item type="Property" id="3075DCFDF3A544B0929E983AB0BCC07C" action="add">
+    <column_alignment>left</column_alignment>
+    <column_width>200</column_width>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Description</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>80</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+    <stored_length>256</stored_length>
+    <track_history>0</track_history>
+    <name>z_description</name>
+   </Item>
+   <Item type="Property" id="32606CBEF65D488694ADB35A76A70C15" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Development phase name</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>20</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+    <name>z_dev_phase_name</name>
+   </Item>
+   <Item type="Property" id="390AF3732A2C41E29402F5CC8018FEC9" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>date</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">End Date</label>
+    <pattern>short_date</pattern>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>60</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+    <track_history>0</track_history>
+    <name>z_end_date</name>
+   </Item>
+   <Item type="Property" id="B34174146BBE45B196FED274F6FCF567" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>date</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <label xml:lang="en">Start Date</label>
+    <pattern>short_date</pattern>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>50</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+    <track_history>0</track_history>
+    <name>z_start_date</name>
+   </Item>
+   <Item type="Property" id="4729F293DF1548E887E79AC14FBB3BC0" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source>
+     <Item type="Property" action="get" select="id">
+      <name>current_state</name>
+      <source_id>3AA8CE3142BC4E269AA99E73484676EF</source_id>
+     </Item>
+    </data_source>
+    <data_type>foreign</data_type>
+    <foreign_property>
+     <Item type="Property" action="get" select="id">
+      <keyed_name>label</keyed_name>
+      <source_id>
+       <Item type="ItemType" action="get" select="id">
+        <name>Life Cycle State</name>
+       </Item>
+      </source_id>
+     </Item>
+    </foreign_property>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Status</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>70</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+    <track_history>0</track_history>
+    <name>z_state</name>
+   </Item>
+   <Item type="View" id="161E97D52CC24F0EA821A31B5F4A707A" action="add">
+    <client>js</client>
+    <related_id keyed_name="z_Version" type="Form">8C1FD906AE05475FBCE28AA0A76C67D4</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <show_ssvc>0</show_ssvc>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="ItemType Life Cycle" id="F05C920569324F9AA0B1ADB63A69A2EE" action="add">
+    <related_id keyed_name="z_Version" type="Life Cycle Map">9EBA74318B694A6D80E7C589637131B6</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+   </Item>
+   <Item type="Allowed Workflow" id="FD248FEF24CA4668952BE7678CE0A3D8" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="z_Version" type="Workflow Map">7404547F965E4CA4B133C42861F0D0A2</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+   </Item>
+   <Item type="TOC Access" id="A285F75E1DC34CE4B652893EB954E905" action="add">
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+   </Item>
+   <Item type="Can Add" id="AD7C791EE2184DCD9371A04CF72638E3" action="add">
+    <can_add>1</can_add>
+    <related_id keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+   </Item>
+   <Item type="Allowed Permission" id="6CEA4C4189BA41EE80A5147648A61E9C" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="Administrators" type="Permission">5BE54C871FB14F6EBC11596D1A010D26</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+ <Item type="ItemType" id="3AA8CE3142BC4E269AA99E73484676EF" action="edit">
+  <Relationships>
+   <Item type="Property" id="C5448528BE9C424CB116E902866D96C1" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="z_Project" type="ItemType" name="z_Project">C6EA958D22334231A3B5394D383461D5</data_source>
+    <data_type>item</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>1</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <item_behavior>float</item_behavior>
+    <keyed_name_order>1</keyed_name_order>
+    <label xml:lang="en">Project Name</label>
+    <order_by>1</order_by>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+    <track_history>0</track_history>
+    <name>z_project_name</name>
+   </Item>
+   <Item type="Property" id="ABC5B7B808064102BE108D2F8FC30BF7" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>1</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Stage</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>40</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+    <name>z_stage</name>
+   </Item>
+   <Item type="Property" id="997F69C0535A4EE4B7CDDFF1FE8B2E45" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>1</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <keyed_name_order>2</keyed_name_order>
+    <label xml:lang="en">Version</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>30</sort_order>
+    <source_id keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</source_id>
+    <stored_length>10</stored_length>
+    <track_history>0</track_history>
+    <name>z_version</name>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

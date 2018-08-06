@@ -1,0 +1,365 @@
+﻿<AML>
+ <Item type="Form" id="BF97DD595B414502ADEF2BD24C183360" action="add">
+  <category_form>0</category_form>
+  <height>400</height>
+  <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
+  <width>699</width>
+  <name>z_PrjControlModel</name>
+  <Relationships>
+   <Item type="Body" id="4E049702F3314ADF801810F37048FF7D" action="add">
+    <bg_color>#FFFFFF</bg_color>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_PrjControlModel" type="Form">BF97DD595B414502ADEF2BD24C183360</source_id>
+    <Relationships>
+     <Item type="Field" id="98337022C81744BBAAA64FE9ED8B833A" action="add">
+      <bg_color>#ffffff</bg_color>
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Created User</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>1408</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>640</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>0</x>
+      <y>152</y>
+      <name>created_by_id</name>
+     </Item>
+     <Item type="Field" id="6F8F40209AB8494BA3EBF4933D9CCF07" action="add">
+      <bg_color>#ffffff</bg_color>
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Created Date</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>1280</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>512</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>0</x>
+      <y>116</y>
+      <name>created_on</name>
+     </Item>
+     <Item type="Field" id="DDD8D9C3224A4ECEA1BE5DC769C4D4C6" action="add">
+      <display_length_unit>px</display_length_unit>
+      <field_type>html</field_type>
+      <html_code><![CDATA[<span id='ITEM_INFO_INTERNAL_SPAN'/>
+<script>
+  populate_ITEM_INFO_INTERNAL_SPAN = function()
+  {
+    document.getElementById('ITEM_INFO_INTERNAL_SPAN').innerHTML = aras.uiGetItemInfoTable(document.itemType);
+  }
+  window.addEventListener('load', populate_ITEM_INFO_INTERNAL_SPAN);
+</script>]]></html_code>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>1152</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_stop>0</tab_stop>
+      <x>0</x>
+      <y>0</y>
+      <name>item_info</name>
+     </Item>
+     <Item type="Field" id="C133755D6449488FB39E3017A4740097" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Update User</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>1664</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>1152</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>0</x>
+      <y>228</y>
+      <name>modified_by_id</name>
+     </Item>
+     <Item type="Field" id="62BBC4A8FC374954BFE5DF07380AA617" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Update Date</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>1536</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>1024</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>0</x>
+      <y>191</y>
+      <name>modified_on</name>
+     </Item>
+     <Item type="Field" id="8823A094D969496FBA4BB474E70F9C14" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Config</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_config" type="Property">38844DB19B17434BBEE0B1D4363A4BC7</propertytype_id>
+      <sort_order>896</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>70</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>220</y>
+      <name>z_config</name>
+     </Item>
+     <Item type="Field" id="9944BACD366A41859498A4156902BFF8" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>textarea</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Description</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_description" type="Property">357AA7671B6D43938BB898D1DCF0C1F4</propertytype_id>
+      <sort_order>1024</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>120</tab_index>
+      <tab_stop>1</tab_stop>
+      <textarea_cols>400</textarea_cols>
+      <textarea_rows>50</textarea_rows>
+      <x>188</x>
+      <y>262</y>
+      <name>z_description</name>
+     </Item>
+     <Item type="Field" id="29D5835960954B04A4F90A6328F47EA8" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Development phase name</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_dev_phase_name" type="Property">EE508B71902D43C1A3C31575ECD01D7A</propertytype_id>
+      <sort_order>256</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>20</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>49</y>
+      <name>z_dev_phase_name</name>
+     </Item>
+     <Item type="Field" id="76E83256D8A245088B723355145EBF8C" action="add">
+      <border_width>0</border_width>
+      <display_length>170</display_length>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Model Name</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_model_name" type="Property">93D1F3E34A5D476092674150EAD85FB1</propertytype_id>
+      <sort_order>768</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>60</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>188</x>
+      <y>174</y>
+      <name>z_model_name</name>
+     </Item>
+     <Item type="Field" id="ABF28562FB974271A5D6903A95C157EC" action="add">
+      <border_width>0</border_width>
+      <display_length>170</display_length>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Model No</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_model_no" type="Property">BEB9A19CAB364E32B34A7B53BFECFDA3</propertytype_id>
+      <sort_order>640</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>50</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>189</x>
+      <y>131</y>
+      <name>z_model_no</name>
+     </Item>
+     <Item type="Field" id="8989FF28A957438092902A82BECD52B7" action="add">
+      <border_width>0</border_width>
+      <display_length>220</display_length>
+      <display_length_unit>px</display_length_unit>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Project Name</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_project_name" type="Property">2E4FD50FE9D14271997F508EC00C6F55</propertytype_id>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>10</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>10</y>
+      <name>z_project_name</name>
+     </Item>
+     <Item type="Field" id="C0677CC2610E4E8AAF0D501552A26983" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Stage</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_stage" type="Property">1AFB738C03EF440AB541E34047314FFF</propertytype_id>
+      <sort_order>512</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>40</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>350</x>
+      <y>90</y>
+      <name>z_stage</name>
+     </Item>
+     <Item type="Field" id="1EF0FCD6BDE14A4481E7F3242D7FE3B2" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Version</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_version" type="Property">8F872A77A2AE4B3FA32B9956A4394B3D</propertytype_id>
+      <sort_order>384</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>30</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>86</y>
+      <name>z_version</name>
+     </Item>
+     <Item type="Field" id="A55D01B6E33D49158101C1B35E82B37E" action="add">
+      <border_width>0</border_width>
+      <display_length>200</display_length>
+      <display_length_unit>px</display_length_unit>
+      <field_type>file item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">View File</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_view_file" type="Property">2683897063284816AEC57D6B1432DD4F</propertytype_id>
+      <sort_order>1792</sort_order>
+      <source_id keyed_name="4E049702F3314ADF801810F37048FF7D" type="Body">4E049702F3314ADF801810F37048FF7D</source_id>
+      <tab_index>3456</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>350</x>
+      <y>220</y>
+      <name>z_view_file</name>
+     </Item>
+    </Relationships>
+   </Item>
+  </Relationships>
+ </Item>
+ <Item type="Field" id="98337022C81744BBAAA64FE9ED8B833A" action="edit">
+  <!-- Please note: this AML depends on the "z_PrjControlModel" ItemType. Please make sure it exists before running this. -->
+  <propertytype_id>
+   <Item type="Property" action="get" select="id">
+    <name>created_by_id</name>
+    <source_id type="ItemType" keyed_name="z_PrjControlModel">3D45E3C5BE53456B920B852EA2CC54F3</source_id>
+   </Item>
+  </propertytype_id>
+ </Item>
+ <Item type="Field" id="6F8F40209AB8494BA3EBF4933D9CCF07" action="edit">
+  <!-- Please note: this AML depends on the "z_PrjControlModel" ItemType. Please make sure it exists before running this. -->
+  <propertytype_id>
+   <Item type="Property" action="get" select="id">
+    <name>created_on</name>
+    <source_id type="ItemType" keyed_name="z_PrjControlModel">3D45E3C5BE53456B920B852EA2CC54F3</source_id>
+   </Item>
+  </propertytype_id>
+ </Item>
+ <Item type="Field" id="C133755D6449488FB39E3017A4740097" action="edit">
+  <!-- Please note: this AML depends on the "z_PrjControlModel" ItemType. Please make sure it exists before running this. -->
+  <propertytype_id>
+   <Item type="Property" action="get" select="id">
+    <name>modified_by_id</name>
+    <source_id type="ItemType" keyed_name="z_PrjControlModel">3D45E3C5BE53456B920B852EA2CC54F3</source_id>
+   </Item>
+  </propertytype_id>
+ </Item>
+ <Item type="Field" id="62BBC4A8FC374954BFE5DF07380AA617" action="edit">
+  <!-- Please note: this AML depends on the "z_PrjControlModel" ItemType. Please make sure it exists before running this. -->
+  <propertytype_id>
+   <Item type="Property" action="get" select="id">
+    <name>modified_on</name>
+    <source_id type="ItemType" keyed_name="z_PrjControlModel">3D45E3C5BE53456B920B852EA2CC54F3</source_id>
+   </Item>
+  </propertytype_id>
+ </Item>
+</AML>

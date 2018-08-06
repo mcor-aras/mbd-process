@@ -1,0 +1,66 @@
+﻿<AML>
+ <Item type="RelationshipType" id="C5C44CD8E9874D7788DF7C594E609210" action="add" dependencyLevel="0">
+  <auto_search>1</auto_search>
+  <behavior>float</behavior>
+  <copy_permissions>0</copy_permissions>
+  <create_related>0</create_related>
+  <hide_in_all>0</hide_in_all>
+  <inc_rel_key_name>1</inc_rel_key_name>
+  <inc_related_key_name>1</inc_related_key_name>
+  <is_list_type>0</is_list_type>
+  <label xml:lang="en">Version</label>
+  <new_show_related>0</new_show_related>
+  <related_notnull>0</related_notnull>
+  <related_option>0</related_option>
+  <relationship_id keyed_name="z_Project Version" type="ItemType" name="z_Project Version">
+   <Item type="ItemType" id="6960A476005D4CF1A31EA6906A51432F" action="add">
+    <allow_private_permission>1</allow_private_permission>
+    <auto_search>0</auto_search>
+    <enforce_discovery>0</enforce_discovery>
+    <hide_where_used>0</hide_where_used>
+    <implementation_type>table</implementation_type>
+    <instance_data>Z_PROJECT_VERSION</instance_data>
+    <is_dependent>0</is_dependent>
+    <is_relationship>1</is_relationship>
+    <is_versionable>0</is_versionable>
+    <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+    <show_parameters_tab>1</show_parameters_tab>
+    <structure_view>タブオフ</structure_view>
+    <unlock_on_logout>0</unlock_on_logout>
+    <use_src_access>1</use_src_access>
+    <name>z_Project Version</name>
+    <Relationships>
+     <Item type="View" id="FC9505892C614C4FB8F0F605E86AEFD7" action="add">
+      <client>js</client>
+      <related_id keyed_name="z_Project Version" type="Form">482D97BF9EA14865847C0ED3DCEF7C3C</related_id>
+      <role keyed_name="World" type="Identity">
+       <Item type="Identity" action="get" select="id">
+        <name>World</name>
+       </Item>
+      </role>
+      <show_ssvc>0</show_ssvc>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="z_Project Version" type="ItemType" name="z_Project Version">6960A476005D4CF1A31EA6906A51432F</source_id>
+      <type>default</type>
+     </Item>
+    </Relationships>
+   </Item>
+  </relationship_id>
+  <sort_order>10</sort_order>
+  <source_id keyed_name="z_Project" type="ItemType" name="z_Project">C6EA958D22334231A3B5394D383461D5</source_id>
+  <name>z_Project Version</name>
+  <Relationships>
+   <Item type="Relationship View" id="2F4970A274CE4744A8A80410600E65AF" action="add">
+    <parameters>'ITName='+itemTypeName+'&amp;itemID='+itemID+'&amp;reverseITName=z_Version&amp;reversePropertyName=z_project_name'</parameters>
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_Project Version" type="RelationshipType">C5C44CD8E9874D7788DF7C594E609210</source_id>
+    <start_page>../Solutions/PLM/scripts/ReverseItemsGrid.html</start_page>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

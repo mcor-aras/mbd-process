@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toolbarapplet on_load="onToolbarLoad" on_click="onClickItem" on_change="onChoiceChanged" buttonstyle="windows" buttonsize="26,25">
+  <toolbar id="swtoolbar">
+    <button text="全て展開" id="expandall" image="../images/ExpandAll.svg" tooltip="全て展開">全て展開</button>
+    <button text="全て閉じる" id="collapseall" image="../images/CollapseAll.svg" tooltip="全て閉じる">全て閉じる</button>
+  </toolbar>
+</toolbarapplet>

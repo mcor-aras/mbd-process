@@ -1,0 +1,210 @@
+﻿<AML>
+ <Item type="ItemType" id="E539DAD4359448B0AFA9B2A58E9716FD" action="add">
+  <allow_private_permission>1</allow_private_permission>
+  <auto_search>0</auto_search>
+  <enforce_discovery>1</enforce_discovery>
+  <hide_where_used>0</hide_where_used>
+  <history_template keyed_name="Default" type="History Template">3BC16EF9E52B4F9792AB76BCE0492F29</history_template>
+  <implementation_type>table</implementation_type>
+  <instance_data>Z_MODELDESIGNREVIEW</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>0</is_versionable>
+  <label xml:lang="en">Request For Model Design Review</label>
+  <label_plural xml:lang="en">Request For Model Design Review</label_plural>
+  <large_icon>../Images/ReplicationTxnLog.svg</large_icon>
+  <open_icon>../Images/ReplicationTxnLog.svg</open_icon>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+  <show_parameters_tab>1</show_parameters_tab>
+  <structure_view>tabs on</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <name>z_ModelDesignReview</name>
+  <Relationships>
+   <Item type="Property" id="847A64FCFDA342FBB22A7DD277DB43FC" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>date</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">End Date</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>60</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+    <track_history>0</track_history>
+    <name>z_dr_end_dt</name>
+   </Item>
+   <Item type="Property" id="FD8EB6038BE441F69F95D7AA5B3BFC8B" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>date</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Start Date</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>50</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+    <track_history>0</track_history>
+    <name>z_dr_start_dt</name>
+   </Item>
+   <Item type="Property" id="4FE7D34D43EC4EED88ECCB33DE819D86" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Model No</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>30</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+    <name>z_draft_model_no</name>
+   </Item>
+   <Item type="Property" id="4D505C3387C943D1980AF586C8AFFBF4" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>text</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Remark</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>40</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+    <track_history>0</track_history>
+    <name>z_remark</name>
+   </Item>
+   <Item type="Property" id="B4BC6D3FEFFA42FAABA977958C17EC9E" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <keyed_name_order>2</keyed_name_order>
+    <label xml:lang="en">Title</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>20</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+    <stored_length>128</stored_length>
+    <track_history>0</track_history>
+    <name>z_title</name>
+   </Item>
+   <Item type="View" id="B3670ED9295A4E458A781D2229C3AC8F" action="add">
+    <client>js</client>
+    <related_id keyed_name="z_ModelDesignReview" type="Form">9985C170239D4E6DA839C32D7FA5A2AA</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <show_ssvc>1</show_ssvc>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="Item Action" id="07507333D2E84047BA32E28B7771A091" action="add">
+    <related_id keyed_name="VC_AddItemsToBookmarks" type="Action">FD4D2BE9E2B14919BF1973842A556AFD</related_id>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+   </Item>
+   <Item type="ItemType Life Cycle" id="960E0B9D24C042AC939F08743E1C7861" action="add">
+    <related_id keyed_name="z_ModelDesignReview" type="Life Cycle Map">9CDA5B2EA0CF47ED81F034754DBAAC20</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+   </Item>
+   <Item type="Allowed Workflow" id="54D3A1323B744426B2A049FE2E595ACB" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="z_ModelDesignReview" type="Workflow Map">9A04CBAF7053453DB6860F66BB7ACE66</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+   </Item>
+   <Item type="TOC Access" id="5B84FC1F64FC4820AD412A7A6EAF235A" action="add">
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+   </Item>
+   <Item type="Can Add" id="8184D1EFBABD43FA92984F977F325704" action="add">
+    <can_add>1</can_add>
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+   </Item>
+   <Item type="Allowed Permission" id="24B1B09CE4AF433EA84A91CA82F20148" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="Administrators" type="Permission">5BE54C871FB14F6EBC11596D1A010D26</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+ <Item type="ItemType" id="E539DAD4359448B0AFA9B2A58E9716FD" action="edit">
+  <Relationships>
+   <Item type="Property" id="6F0347D859F643A89890C9B5C483BD73" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="z_ModelDesignReview">36C7C5C4176E4892984A5FFFE6A1B28C</data_source>
+    <data_type>sequence</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>1</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <keyed_name_order>1</keyed_name_order>
+    <label xml:lang="en">DR No.</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+    <track_history>0</track_history>
+    <name>z_model_dr_no</name>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='E539DAD4359448B0AFA9B2A58E9716FD' and name='current_state'">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="Life Cycle State" type="ItemType" name="Life Cycle State">5EFB53D35BAE468B851CD388BEA46B30</data_source>
+    <data_type>item</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <item_behavior>float</item_behavior>
+    <label xml:lang="en">Status</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>1</readonly>
+    <sort_order>1280</sort_order>
+    <source_id keyed_name="z_ModelDesignReview" type="ItemType" name="z_ModelDesignReview">E539DAD4359448B0AFA9B2A58E9716FD</source_id>
+    <track_history>0</track_history>
+    <name>current_state</name>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

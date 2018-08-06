@@ -1,0 +1,303 @@
+﻿<AML>
+ <Item type="Form" id="F888653DE1FB4D77824A26338F95FE32" action="add">
+  <category_form>0</category_form>
+  <height>350</height>
+  <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
+  <width>699</width>
+  <name>z_Simulation</name>
+  <Relationships>
+   <Item type="Body" id="F9050A0F59914C03A1C944A49754E448" action="add">
+    <bg_color>#FFFFFF</bg_color>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_Simulation" type="Form">F888653DE1FB4D77824A26338F95FE32</source_id>
+    <Relationships>
+     <Item type="Field" id="B59FE6190FFC4A539C07926853E5AB0F" action="add">
+      <display_length_unit>px</display_length_unit>
+      <field_type>html</field_type>
+      <html_code><![CDATA[<span id='ITEM_INFO_INTERNAL_SPAN'/>
+<script>
+  populate_ITEM_INFO_INTERNAL_SPAN = function()
+  {
+    document.getElementById('ITEM_INFO_INTERNAL_SPAN').innerHTML = aras.uiGetItemInfoTable(document.itemType);
+  }
+  window.addEventListener('load', populate_ITEM_INFO_INTERNAL_SPAN);
+</script>]]></html_code>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>896</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_stop>0</tab_stop>
+      <x>0</x>
+      <y>0</y>
+      <name>item_info</name>
+     </Item>
+     <Item type="Field" id="3F2A5BC9B3F64A38B2C04D20A3B3C9C0" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Initial reviewer</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>1536</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>896</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>500</x>
+      <y>170</y>
+      <name>managed_by_id</name>
+     </Item>
+     <Item type="Field" id="2D3132F4A4384AB4B33683288EC5AC4D" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Last reviewer</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>1408</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>768</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>350</x>
+      <y>170</y>
+      <name>owned_by_id</name>
+     </Item>
+     <Item type="Field" id="9E5F56238C614A48A831E023EAC8E9D3" action="add">
+      <border_width>0</border_width>
+      <display_length>100</display_length>
+      <display_length_unit>px</display_length_unit>
+      <field_type>dropdown</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Category</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_category" type="Property">34BF6D3225E64DBDB82550F56039829E</propertytype_id>
+      <sort_order>640</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>50</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>170</y>
+      <name>z_category</name>
+     </Item>
+     <Item type="Field" id="089D5CCF450C4C45BB35D2E3325A6AF5" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>textarea</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Description</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_description" type="Property">4F2271329B49464083A323862D1CE091</propertytype_id>
+      <sort_order>768</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>70</tab_index>
+      <tab_stop>1</tab_stop>
+      <textarea_cols>400</textarea_cols>
+      <textarea_rows>50</textarea_rows>
+      <x>190</x>
+      <y>252</y>
+      <name>z_description</name>
+     </Item>
+     <Item type="Field" id="0427B94D51234F90AFFC2B29DFABC723" action="add">
+      <border_width>0</border_width>
+      <display_length>220</display_length>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Development phase name</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_dev_phase_name" type="Property">08124E6B91C44AA4B6A11D67AB2DCF32</propertytype_id>
+      <sort_order>256</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>20</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>50</y>
+      <name>z_dev_phase_name</name>
+     </Item>
+     <Item type="Field" id="BBCB810A57864F4AB04D12482593D0F2" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>date</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">End Date</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_end_date" type="Property">BA5B25403628447998E97AA812C22415</propertytype_id>
+      <sort_order>1280</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>70</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>350</x>
+      <y>210</y>
+      <name>z_end_date</name>
+     </Item>
+     <Item type="Field" id="F1E8C50303AE4B21B1304E77001DA7D6" action="add">
+      <border_width>0</border_width>
+      <display_length>170</display_length>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Simulation Name</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_name" type="Property">8D7C395AE9DC426C95892AEE63C7CE1D</propertytype_id>
+      <sort_order>512</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>40</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>130</y>
+      <name>z_name</name>
+     </Item>
+     <Item type="Field" id="8DDF5DC81AA547EAA884D004ACA93736" action="add">
+      <border_width>0</border_width>
+      <display_length>220</display_length>
+      <display_length_unit>px</display_length_unit>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Project Name</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_project_name" type="Property">1D773A25D2534BB6A9F3697B85846D59</propertytype_id>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>10</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>10</y>
+      <name>z_project_name</name>
+     </Item>
+     <Item type="Field" id="6752F16DE9494C7887B7A89E543228D1" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>date</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Start Date</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_start_date" type="Property">F986054B783444848A5EA6EC50BF1D27</propertytype_id>
+      <sort_order>1152</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>60</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>210</y>
+      <name>z_start_date</name>
+     </Item>
+     <Item type="Field" id="2AF981724BE0452787A07C984FB0A420" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Status</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_state" type="Property">E2E441F2678F488E9DEA11F28041A213</propertytype_id>
+      <sort_order>1024</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>60</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>0</x>
+      <y>119</y>
+      <name>z_state</name>
+     </Item>
+     <Item type="Field" id="86AC18E274FC49A08F3927CB97D642B8" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Version</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="z_version" type="Property">68B7B7A690BE43BE801A7AAF6294B5C2</propertytype_id>
+      <sort_order>384</sort_order>
+      <source_id keyed_name="F9050A0F59914C03A1C944A49754E448" type="Body">F9050A0F59914C03A1C944A49754E448</source_id>
+      <tab_index>30</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>90</y>
+      <name>z_version</name>
+     </Item>
+    </Relationships>
+   </Item>
+  </Relationships>
+ </Item>
+ <Item type="Field" id="3F2A5BC9B3F64A38B2C04D20A3B3C9C0" action="edit">
+  <!-- Please note: this AML depends on the "z_Simulation" ItemType. Please make sure it exists before running this. -->
+  <propertytype_id>
+   <Item type="Property" action="get" select="id">
+    <name>managed_by_id</name>
+    <source_id type="ItemType" keyed_name="z_Simulation">610D27D8E7564A89AE8CD071606AD3DD</source_id>
+   </Item>
+  </propertytype_id>
+ </Item>
+ <Item type="Field" id="2D3132F4A4384AB4B33683288EC5AC4D" action="edit">
+  <!-- Please note: this AML depends on the "z_Simulation" ItemType. Please make sure it exists before running this. -->
+  <propertytype_id>
+   <Item type="Property" action="get" select="id">
+    <name>owned_by_id</name>
+    <source_id type="ItemType" keyed_name="z_Simulation">610D27D8E7564A89AE8CD071606AD3DD</source_id>
+   </Item>
+  </propertytype_id>
+ </Item>
+</AML>

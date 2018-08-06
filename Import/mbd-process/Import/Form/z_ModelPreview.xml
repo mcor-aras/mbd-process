@@ -1,0 +1,81 @@
+﻿<AML>
+ <Item type="Form" id="009FAEDB226F4C21B56C753410900A19" action="add">
+  <category_form>0</category_form>
+  <height>234</height>
+  <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
+  <width>699</width>
+  <name>z_ModelPreview</name>
+  <Relationships>
+   <Item type="Body" id="FF755E98B0F74ECA860EF280E7407CFC" action="add">
+    <bg_color>#FFFFFF</bg_color>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_ModelPreview" type="Form">009FAEDB226F4C21B56C753410900A19</source_id>
+    <Relationships>
+     <Item type="Field" id="5BD80A47CE9F496AB7D3610BA6EDA9B5" action="add">
+      <border_width>0</border_width>
+      <css>        {$this field rule}
+        {
+          width: 100%;
+          bottom: 0px;
+        }
+        
+</css>
+      <display_length_unit>px</display_length_unit>
+      <field_type>html</field_type>
+      <font_color>#000000</font_color>
+      <font_family>tahoma, arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <html_code><![CDATA[<script type="text/javascript">
+	var innovator;
+	var onload_handler = function () {
+		//View form in FormTool
+		if (!document.item) return;
+		
+		innovator = new top.Innovator();
+		
+		setSrcInIframe();
+	}
+	
+	window.addEventListener("DOMContentLoaded", onload_handler);
+	
+	var setSrcInIframe = function(){
+		// ビューファイルを取得
+		var fileId = document.thisItem.getProperty("z_view_file");
+		if (!fileId){
+			document.getElementById("dimmer_spinner").style.display="none";
+			return;
+		}
+		
+		var fileUrl = top.aras.IomInnovator.getFileUrl(fileId, top.aras.Enums.UrlType.SecurityToken);
+		if (!fileUrl){
+			document.getElementById("dimmer_spinner").style.display="none";
+			return;
+		}
+		
+		// mhtファイルを表示の場合
+		var viewArea = document.getElementById('model_view');
+		viewArea.src = fileUrl;
+		viewArea.onload = (function(){
+			document.getElementById("dimmer_spinner").style.display="none";
+		});
+	}
+</script>
+<iframe id="dimmer_spinner" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" style="width: 100%; height: 100%; position: absolute; left: 0;" hspace="0" src="../scripts/spinner.html"></iframe>
+<iframe id="model_view" frameborder="0" marginwidth="0" marginheight="0" scrolling="auto" style="width: 100%; height: 100%; position: absolute; left: 0;" hspace="0"></iframe>]]></html_code>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="FF755E98B0F74ECA860EF280E7407CFC" type="Body">FF755E98B0F74ECA860EF280E7407CFC</source_id>
+      <tab_stop>1</tab_stop>
+      <x>0</x>
+      <y>0</y>
+      <name>html0</name>
+     </Item>
+    </Relationships>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

@@ -1,0 +1,35 @@
+<export>
+  <Item keyed_name="Approved" config_id="C8743B6C511045408F0A274FD8C936AA">
+    <property __name="label" en="Approved" ja="承認済み" />
+  </Item>
+  <Item keyed_name="In Review" config_id="E36F59F63796485197F77C356AC3AD11">
+    <property __name="label" en="In Review" ja="レビュー中" />
+  </Item>
+  <Item keyed_name="In Work" config_id="E7E454A0B1F44D528A463C76AF111B30">
+    <property __name="label" en="In Work" ja="作業中" />
+  </Item>
+  <Item keyed_name="Approved" config_id="53EADD3F0FAC4DED93A6ABA2E266FEC1">
+    <property __name="label" en="Approved" ja="レビュー済み" />
+  </Item>
+  <Item keyed_name="In Review" config_id="3A47C8E8108E44C094FC84EA5A697CD6">
+    <property __name="label" en="In Review" ja="レビュー中" />
+  </Item>
+  <Item keyed_name="In Work" config_id="1BEFF8A1DD54472F9A9D5ECB644919E8">
+    <property __name="label" en="In Work" ja="作業中" />
+  </Item>
+  <Item keyed_name="Approved" config_id="5CA55685ABB44C2181CA011C0E948709">
+    <property __name="label" en="Approved" ja="承認済み" />
+  </Item>
+  <Item keyed_name="In Review" config_id="44FD771771914355BD65C56E1965126A">
+    <property __name="label" en="In Review" ja="レビュー中" />
+  </Item>
+  <Item keyed_name="In Work" config_id="0A0702955173467C87D4E586E3FDE701">
+    <property __name="label" en="In Work" ja="作業中" />
+  </Item>
+  <Item keyed_name="Approved" config_id="9F4DBB02BFD94B2D8E4F1BFEC2F3F7FE">
+    <property __name="label" en="Approved" ja="承認" />
+  </Item>
+  <Item keyed_name="In Work" config_id="FE6F82034CF340649FF6CEFFA7ACEEA0">
+    <property __name="label" en="In Work" ja="作業中" />
+  </Item>
+</export>

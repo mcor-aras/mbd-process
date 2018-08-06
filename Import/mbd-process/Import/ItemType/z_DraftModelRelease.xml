@@ -1,0 +1,228 @@
+﻿<AML>
+ <Item type="ItemType" id="9CE27ED408B1438CBA00EC1309F2AECF" action="add">
+  <allow_private_permission>1</allow_private_permission>
+  <auto_search>0</auto_search>
+  <enforce_discovery>1</enforce_discovery>
+  <hide_where_used>0</hide_where_used>
+  <history_template keyed_name="Default" type="History Template">3BC16EF9E52B4F9792AB76BCE0492F29</history_template>
+  <implementation_type>table</implementation_type>
+  <instance_data>Z_DRAFTMODELRELEASE</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>0</is_versionable>
+  <label xml:lang="en">Draft Model Release</label>
+  <label_plural xml:lang="en">Draft Model Release</label_plural>
+  <large_icon>../Images/MeasurePointToPoint.svg</large_icon>
+  <open_icon>../Images/MeasurePointToPoint.svg</open_icon>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+  <show_parameters_tab>1</show_parameters_tab>
+  <structure_view>tabs on</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <name>z_DraftModelRelease</name>
+  <Relationships>
+   <Item type="Property" id="B2889E9D69B948B1A447C3FD6C501802" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source>
+     <Item type="Property" action="get" select="id">
+      <name>z_version</name>
+      <source_id>9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+     </Item>
+    </data_source>
+    <data_type>foreign</data_type>
+    <foreign_property>
+     <Item type="Property" action="get" select="id">
+      <keyed_name>z_dev_phase_name</keyed_name>
+      <source_id>
+       <Item type="ItemType" action="get" select="id">
+        <name>z_Version</name>
+       </Item>
+      </source_id>
+     </Item>
+    </foreign_property>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Model No</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>40</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+    <track_history>0</track_history>
+    <name>z_dev_phase_name</name>
+   </Item>
+   <Item type="Property" id="02344BF6931B4B35ADFB7DB34823CCF7" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source>
+     <Item type="Property" action="get" select="id">
+      <name>z_version</name>
+      <source_id>9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+     </Item>
+    </data_source>
+    <data_type>foreign</data_type>
+    <foreign_property>
+     <Item type="Property" action="get" select="id">
+      <keyed_name>z_project_name</keyed_name>
+      <source_id>
+       <Item type="ItemType" action="get" select="id">
+        <name>z_Version</name>
+       </Item>
+      </source_id>
+     </Item>
+    </foreign_property>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Model Name</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>30</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+    <track_history>0</track_history>
+    <name>z_project_name</name>
+   </Item>
+   <Item type="Property" id="AC97EBEA58D44035B08A04E056248D04" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="z_DraftModelRelease">DFA4471D65534AFFA527F60BB2E88F62</data_source>
+    <data_type>sequence</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Release No</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+    <track_history>0</track_history>
+    <name>z_release_no</name>
+   </Item>
+   <Item type="Property" id="C29D242E65B94575B47084FD259F1D94" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source>
+     <Item type="Property" action="get" select="id">
+      <name>z_version</name>
+      <source_id>9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+     </Item>
+    </data_source>
+    <data_type>foreign</data_type>
+    <foreign_property>
+     <Item type="Property" action="get" select="id">
+      <keyed_name>z_stage</keyed_name>
+      <source_id>
+       <Item type="ItemType" action="get" select="id">
+        <name>z_Version</name>
+       </Item>
+      </source_id>
+     </Item>
+    </foreign_property>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Stage</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>60</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+    <track_history>0</track_history>
+    <name>z_stage</name>
+   </Item>
+   <Item type="Property" id="82C7BD55ADEF432AB823BDB7D7923BEE" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Title</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>20</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+    <stored_length>128</stored_length>
+    <track_history>0</track_history>
+    <name>z_title</name>
+   </Item>
+   <Item type="Property" id="6A2FB6E609334452AF8DE879D5C55609" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</data_source>
+    <data_type>item</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <label xml:lang="en">Version</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>50</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+    <track_history>0</track_history>
+    <name>z_version</name>
+   </Item>
+   <Item type="View" id="FBB104A11DF942879073276089C37130" action="add">
+    <client>js</client>
+    <related_id keyed_name="z_DraftModelRelease" type="Form">53B333FEB37944628B6DE0A32CE0FFF2</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <show_ssvc>0</show_ssvc>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="ItemType Life Cycle" id="04502CD788724C70986A6510E60503F7" action="add">
+    <related_id keyed_name="z_DraftModelRelease" type="Life Cycle Map">CF0275A869C44A08BC4AD74E6D3D4C52</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+   </Item>
+   <Item type="Allowed Workflow" id="D63CEBC1C9594AFC809AAC870059D92C" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="z_DraftModelRelease" type="Workflow Map">25E096297F8149FFB914294F02A193F4</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+   </Item>
+   <Item type="TOC Access" id="6BCDBCD2A96F47358168EC358EBD8D46" action="add">
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+   </Item>
+   <Item type="Can Add" id="77EEE93C24974692B5ED8B8620312B07" action="add">
+    <can_add>1</can_add>
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+   </Item>
+   <Item type="Allowed Permission" id="93831B3E4352418AA7580A44EA2E6CCA" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="Administrators" type="Permission">5BE54C871FB14F6EBC11596D1A010D26</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="ItemType" name="z_DraftModelRelease">9CE27ED408B1438CBA00EC1309F2AECF</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

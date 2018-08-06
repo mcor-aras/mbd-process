@@ -1,0 +1,15 @@
+﻿<AML>
+ <Item type="Form" id="0054797DA94046CCBFC41D850691C458" action="add">
+  <category_form>0</category_form>
+  <height>234</height>
+  <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
+  <width>699</width>
+  <name>z_test_frameset</name>
+  <Relationships>
+   <Item type="Body" id="5DFB135BDC984434A37A51EACF23E3B9" action="add">
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_test_frameset" type="Form">0054797DA94046CCBFC41D850691C458</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

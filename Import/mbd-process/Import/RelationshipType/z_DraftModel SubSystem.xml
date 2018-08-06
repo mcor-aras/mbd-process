@@ -1,0 +1,165 @@
+﻿<AML>
+ <Item type="RelationshipType" id="9FBF8C0F58DB480CA4D4BAF5D9D7697B" action="add" dependencyLevel="0">
+  <auto_search>1</auto_search>
+  <behavior>float</behavior>
+  <copy_permissions>0</copy_permissions>
+  <create_related>0</create_related>
+  <hide_in_all>0</hide_in_all>
+  <inc_rel_key_name>1</inc_rel_key_name>
+  <inc_related_key_name>1</inc_related_key_name>
+  <is_list_type>0</is_list_type>
+  <label xml:lang="en">SubSystem</label>
+  <new_show_related>0</new_show_related>
+  <related_notnull>0</related_notnull>
+  <related_option>1</related_option>
+  <relationship_id keyed_name="z_DraftModel SubSystem" type="ItemType" name="z_DraftModel SubSystem">
+   <Item type="ItemType" id="B5D4E4F36DFF4A6DBE317AA0D0DE6EB7" action="add">
+    <allow_private_permission>1</allow_private_permission>
+    <auto_search>0</auto_search>
+    <enforce_discovery>0</enforce_discovery>
+    <hide_where_used>0</hide_where_used>
+    <implementation_type>table</implementation_type>
+    <instance_data>Z_DRAFTMODEL_SUBSYSTEM</instance_data>
+    <is_dependent>0</is_dependent>
+    <is_relationship>1</is_relationship>
+    <is_versionable>0</is_versionable>
+    <label xml:lang="en">SubSystem</label>
+    <label_plural xml:lang="en">SubSystem</label_plural>
+    <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+    <show_parameters_tab>1</show_parameters_tab>
+    <structure_view>tabs on</structure_view>
+    <unlock_on_logout>0</unlock_on_logout>
+    <use_src_access>1</use_src_access>
+    <name>z_DraftModel SubSystem</name>
+    <Relationships>
+     <Item type="Property" id="C37E6230F04540E4AA0D426FFF3D867F" action="add">
+      <column_alignment>left</column_alignment>
+      <data_type>image</data_type>
+      <is_hidden>1</is_hidden>
+      <is_hidden2>1</is_hidden2>
+      <is_indexed>0</is_indexed>
+      <is_keyed>0</is_keyed>
+      <is_multi_valued>0</is_multi_valued>
+      <is_required>0</is_required>
+      <label xml:lang="en">Thumbnail</label>
+      <range_inclusive>0</range_inclusive>
+      <readonly>0</readonly>
+      <sort_order>60</sort_order>
+      <source_id keyed_name="z_DraftModel SubSystem" type="ItemType" name="z_DraftModel SubSystem">B5D4E4F36DFF4A6DBE317AA0D0DE6EB7</source_id>
+      <track_history>0</track_history>
+      <name>thumbnail</name>
+     </Item>
+     <Item type="Property" id="671191DE017C4785BDB46519D9BC8104" action="add">
+      <column_alignment>left</column_alignment>
+      <data_source keyed_name="File" type="ItemType" name="File">8052A558B9084D41B9F11805E464F443</data_source>
+      <data_type>item</data_type>
+      <is_hidden>0</is_hidden>
+      <is_hidden2>0</is_hidden2>
+      <is_indexed>0</is_indexed>
+      <is_keyed>0</is_keyed>
+      <is_multi_valued>0</is_multi_valued>
+      <is_required>0</is_required>
+      <label xml:lang="en">Image</label>
+      <range_inclusive>0</range_inclusive>
+      <readonly>0</readonly>
+      <sort_order>50</sort_order>
+      <source_id keyed_name="z_DraftModel SubSystem" type="ItemType" name="z_DraftModel SubSystem">B5D4E4F36DFF4A6DBE317AA0D0DE6EB7</source_id>
+      <track_history>0</track_history>
+      <name>z_image_file</name>
+     </Item>
+     <Item type="Property" id="39F88EFB2A2148AB8BDD7D40D78393B2" action="add">
+      <column_alignment>left</column_alignment>
+      <data_type>string</data_type>
+      <is_hidden>0</is_hidden>
+      <is_hidden2>0</is_hidden2>
+      <is_indexed>0</is_indexed>
+      <is_keyed>0</is_keyed>
+      <is_multi_valued>0</is_multi_valued>
+      <is_required>0</is_required>
+      <keyed_name_order>1</keyed_name_order>
+      <label xml:lang="en">Index No.</label>
+      <range_inclusive>0</range_inclusive>
+      <readonly>0</readonly>
+      <sort_order>10</sort_order>
+      <source_id keyed_name="z_DraftModel SubSystem" type="ItemType" name="z_DraftModel SubSystem">B5D4E4F36DFF4A6DBE317AA0D0DE6EB7</source_id>
+      <stored_length>32</stored_length>
+      <track_history>0</track_history>
+      <name>z_index_no</name>
+     </Item>
+     <Item type="Property" id="A0BACE7FC91240868D10244FEBD8F674" action="add">
+      <column_alignment>left</column_alignment>
+      <data_type>string</data_type>
+      <is_hidden>0</is_hidden>
+      <is_hidden2>0</is_hidden2>
+      <is_indexed>0</is_indexed>
+      <is_keyed>0</is_keyed>
+      <is_multi_valued>0</is_multi_valued>
+      <is_required>0</is_required>
+      <label xml:lang="en">Parent SubSystem</label>
+      <range_inclusive>0</range_inclusive>
+      <readonly>0</readonly>
+      <sort_order>30</sort_order>
+      <source_id keyed_name="z_DraftModel SubSystem" type="ItemType" name="z_DraftModel SubSystem">B5D4E4F36DFF4A6DBE317AA0D0DE6EB7</source_id>
+      <stored_length>32</stored_length>
+      <track_history>0</track_history>
+      <name>z_parent_subsystem</name>
+     </Item>
+     <Item type="Property" id="E32DEB053D0F475EB2FADFAA47E965D7" action="add">
+      <column_alignment>left</column_alignment>
+      <data_source keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</data_source>
+      <data_type>item</data_type>
+      <is_hidden>0</is_hidden>
+      <is_hidden2>0</is_hidden2>
+      <is_indexed>0</is_indexed>
+      <is_keyed>0</is_keyed>
+      <is_multi_valued>0</is_multi_valued>
+      <is_required>0</is_required>
+      <item_behavior>float</item_behavior>
+      <label xml:lang="en">Reference model</label>
+      <range_inclusive>0</range_inclusive>
+      <readonly>0</readonly>
+      <sort_order>40</sort_order>
+      <source_id keyed_name="z_DraftModel SubSystem" type="ItemType" name="z_DraftModel SubSystem">B5D4E4F36DFF4A6DBE317AA0D0DE6EB7</source_id>
+      <track_history>0</track_history>
+      <name>z_ref_draft_model</name>
+     </Item>
+     <Item type="Property" id="32C3A9DA53B2465897442719B952D5E6" action="add">
+      <column_alignment>left</column_alignment>
+      <data_type>string</data_type>
+      <is_hidden>0</is_hidden>
+      <is_hidden2>0</is_hidden2>
+      <is_indexed>0</is_indexed>
+      <is_keyed>0</is_keyed>
+      <is_multi_valued>0</is_multi_valued>
+      <is_required>1</is_required>
+      <keyed_name_order>2</keyed_name_order>
+      <label xml:lang="en">SubSystem Name</label>
+      <range_inclusive>0</range_inclusive>
+      <readonly>0</readonly>
+      <sort_order>20</sort_order>
+      <source_id keyed_name="z_DraftModel SubSystem" type="ItemType" name="z_DraftModel SubSystem">B5D4E4F36DFF4A6DBE317AA0D0DE6EB7</source_id>
+      <stored_length>32</stored_length>
+      <track_history>0</track_history>
+      <name>z_subsystem_name</name>
+     </Item>
+     <Item type="View" id="3B682DAFA40F43619A3613E500DC3EDC" action="add">
+      <client>js</client>
+      <related_id keyed_name="z_DraftModel SubSystem" type="Form">E63D13C1E9FC42BCB3D99745313716CC</related_id>
+      <role keyed_name="World" type="Identity">
+       <Item type="Identity" action="get" select="id">
+        <name>World</name>
+       </Item>
+      </role>
+      <show_ssvc>0</show_ssvc>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="z_DraftModel SubSystem" type="ItemType" name="z_DraftModel SubSystem">B5D4E4F36DFF4A6DBE317AA0D0DE6EB7</source_id>
+      <type>default</type>
+     </Item>
+    </Relationships>
+   </Item>
+  </relationship_id>
+  <sort_order>256</sort_order>
+  <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
+  <name>z_DraftModel SubSystem</name>
+ </Item>
+</AML>

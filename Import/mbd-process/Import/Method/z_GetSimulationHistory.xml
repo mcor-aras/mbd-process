@@ -1,0 +1,311 @@
+﻿<AML>
+ <Item type="Method" id="3733D0255ED54360BDD17D3AF96C993F" action="add">
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[    //*******************************************************************************************************
+    // メソッド名: z_GetSimulationHistory
+    // 版        : AA
+    // メソッド概要：
+    //   シミュレーション履歴情報を取得する。
+    // 
+    // 作成日(修正日)   更新者         版    内容
+    // 2017/08/04       MCOR)多田      AA    新規
+    //
+    //
+    //
+    //*******************************************************************************************************
+
+    //System.Diagnostics.Debugger.Break();
+    Innovator inn = this.getInnovator();
+
+    //引数の取得
+    string modelId = this.getProperty("id", "");
+    //string category = this.getProperty("category", "");
+
+    DictsForMultiBom dictOfData = new DictsForMultiBom();
+
+    //制御モデルが取得できた場合、シミュレーション構成を作成する
+    if (!string.IsNullOrEmpty(modelId)) {
+        GetDataForParsing getDataForParsing = new GetDataForParsing(inn.getUserID(), this);
+        getDataForParsing.SetDataToDict(dictOfData, modelId);
+    }
+
+    GetMultiBom ret = new GetMultiBom(CCO);
+    string parsedData4Return = ret.GetCompleteBom(dictOfData);
+
+    return inn.newResult(parsedData4Return);
+
+    }
+
+    class DictsForMultiBom {
+        public Dictionary < string, List < InfoOfItem >> dictAllItems;
+        public List < InfoOfItem > zeroLevelItems;
+    }
+
+    class InfoOfItem {
+        public string project = "";
+        public string phase = "";
+        public string name = "";
+        public string version = "";
+        public string category = "";
+        public string description = "";
+        public string generation = "";
+        public string geneModel = "";
+        public string startDate = "";
+        public string endDate = "";
+        public string id = "";
+
+    }
+
+    class GetDataForParsing {
+        private string thisUserID;
+        private Item item;
+
+        public GetDataForParsing(string userId, Item model) {
+            this.thisUserID = userId;
+            this.item = model;
+        }
+
+        public void SetDataToDict(DictsForMultiBom dictOfData, string modelId) {
+            Dictionary < string, List < InfoOfItem >> dictItemProp = new Dictionary < string, List < InfoOfItem >> ();
+            List < InfoOfItem > zeroLevelItems = new List < InfoOfItem > ();
+
+            //全世代を取得する
+            Item model = item.newItem("z_PrjControlModel", "get");
+            model.setID(modelId);
+            model = model.apply();
+            if (model.isError() && !model.isEmpty()) {
+                return;
+            }
+
+            string configId = model.getProperty("config_id", "");
+            model = item.newItem("z_PrjControlModel", "get");
+            model.setProperty("config_id", configId);
+            model = model.apply();
+            if (model.isError() && !model.isEmpty()) {
+                return;
+            }
+
+            //世代数の取得
+            int geneCnt = int.Parse(model.getProperty("generation", ""));
+
+            //制御モデルの世代分繰り返す
+            for (int cnt = geneCnt; cnt > 0; cnt--) {
+
+                //シミュレーションアイテムの取得
+                Item itm = item.newItem("z_Simulation", "get");
+                Item relationship = item.newItem("z_Simulation PrjControlModel", "get");
+                Item relItem = item.newItem("z_PrjControlModel", "get");
+                relItem.setProperty("generation", cnt.ToString());
+                relItem.setProperty("config_id", configId);
+                relationship.setRelatedItem(relItem);
+                itm.addRelationship(relationship);
+                itm.setAttribute("orderBy", "z_start_date desc");
+
+                itm = itm.apply();
+                if (itm.isError() && !itm.isEmpty()) {
+                    return;
+                }
+                relItem = relItem.apply();
+                if (relItem.isError() && !relItem.isEmpty()) {
+                    return;
+                }
+                //世代
+                string generation = "";
+                //モデル番号
+                string modelNo = "";
+                //モデル番号(世代)
+                string geneModel = "";
+                generation = relItem.getProperty("generation", "");
+                modelNo = relItem.getProperty("z_model_no", "");
+                geneModel = modelNo + "(" + generation + ")";
+
+                //シミュレーションアイテム数
+                int simuCnt = itm.getItemCount();
+
+                //対象制御モデルを子にもつシミュレーションを取得
+                for (int i = 0; i < simuCnt; i++) {
+                    Item simuItem = itm.getItemByIndex(i);
+
+                    //カテゴリ(リスト)のラベル取得
+                    Item value = item.newItem("Value", "get");
+                    value.setAttribute("where", "[Value].source_id = (select id from [List] where name='z_SimulationCategory')");
+                    value.setProperty("value", simuItem.getProperty("z_category", ""));
+                    value = value.apply();
+                    if (value.isError() && !value.isEmpty()) {
+                        return;
+                    }
+
+                    //バージョンアイテム取得
+                    Item ver = item.newItem("z_version", "get");
+                    ver.setID(simuItem.getProperty("z_version", ""));
+                    ver = ver.apply();
+                    if (ver.isError() && !ver.isEmpty()) {
+                        return;
+                    }
+
+                    //リストにシミュレーションアイテムを格納
+                    InfoOfItem infoOfItem = new InfoOfItem();
+                    infoOfItem.project = simuItem.getPropertyAttribute("z_project_name", "keyed_name", "");
+                    infoOfItem.name = simuItem.getProperty("z_name", "");
+                    infoOfItem.version = ver.getProperty("z_version", "");
+                    infoOfItem.category = value.getProperty("label", "");
+                    infoOfItem.description = simuItem.getProperty("z_description", "");
+                    infoOfItem.generation = generation;
+                    infoOfItem.geneModel = geneModel;
+                    infoOfItem.phase = simuItem.getProperty("z_dev_phase_name", "");
+                    infoOfItem.startDate = simuItem.getProperty("z_start_date", "").Substring(0, 10);
+                    if (!string.IsNullOrEmpty(simuItem.getProperty("z_end_date", ""))) {
+                        infoOfItem.endDate = simuItem.getProperty("z_end_date", "").Substring(0, 10);
+                    }
+
+                    infoOfItem.id = simuItem.getProperty("id");
+
+                    List < InfoOfItem > dataOfItemList;
+
+                    dictItemProp.TryGetValue(generation, out dataOfItemList);
+                    if (dataOfItemList != null) {
+                        dataOfItemList.Add(infoOfItem);
+                    } else {
+                        List < InfoOfItem > datList = new List < InfoOfItem > ();
+                        datList.Add(infoOfItem);
+                        dictItemProp.Add(generation, datList);
+                    }
+                }
+
+                //親シミュレーションが存在する場合のみダミーアイテムを作成する
+                if (simuCnt > 0) {
+                    //ダミーアイテムの追加
+                    InfoOfItem infoOfItemDummy = new InfoOfItem();
+                    infoOfItemDummy.geneModel = geneModel;
+                    infoOfItemDummy.generation = generation;
+
+                    zeroLevelItems.Add(infoOfItemDummy);
+                }
+
+            }
+
+            dictOfData.dictAllItems = dictItemProp;
+            dictOfData.zeroLevelItems = zeroLevelItems;
+
+        }
+
+    }
+
+    class GetMultiBom {
+        private
+        const String InnovatorCCOUID = "PE_GetRelatedParts_InnovatorCCO";
+
+        public GetMultiBom(Aras.Server.Core.CallContext CCO) {
+            HttpContext.Current.Items[InnovatorCCOUID] = CCO;
+        }
+
+        private Aras.Server.Core.CallContext GetCCO() {
+            return (Aras.Server.Core.CallContext) HttpContext.Current.Items[InnovatorCCOUID];
+        }
+
+        public string GetCompleteBom(DictsForMultiBom dictOfData) {
+            Dictionary < string, List < InfoOfItem >> dictAllItems = dictOfData.dictAllItems;
+            List < InfoOfItem > zeroLevelItems = dictOfData.zeroLevelItems;
+
+            StringBuilder itemStylesheet = new StringBuilder();
+            this.GetBaseTamplate(itemStylesheet);
+            List < InfoOfItem > dataOfItemList;
+
+            if (dictAllItems != null && dictAllItems.Count != 0) {
+                foreach(InfoOfItem parentItem in zeroLevelItems) {
+                    this.GetParsedData(parentItem, itemStylesheet);
+                    if (dictAllItems.TryGetValue(parentItem.generation, out dataOfItemList)) {
+                        foreach(InfoOfItem childBom in dataOfItemList) {
+                            GetParsedData(childBom, itemStylesheet);
+                            itemStylesheet.Append("</tr>");
+                        }
+                    }
+                    itemStylesheet.Append("</tr>");
+                }
+            }
+            itemStylesheet.Append("</table>");
+            return itemStylesheet.ToString();
+        }
+
+        private string Escape(string data) {
+            return System.Security.SecurityElement.Escape(data);
+        }
+
+        private void GetParsedData(InfoOfItem iof, StringBuilder itemStylesheet) {
+            itemStylesheet.Append("<tr generation=\"");
+            itemStylesheet.Append(Escape(iof.generation));
+            itemStylesheet.Append("\" icon0=\"../images/ExplodedView.svg\" icon1=\"../images/ExplodedView.svg\"><userdata key=\"gridData_rowItemID\" value=\"");
+            itemStylesheet.Append(Escape(iof.id));
+            itemStylesheet.Append("\" /><td>");
+            itemStylesheet.Append(Escape(iof.geneModel));
+            itemStylesheet.Append("</td><td>");
+            itemStylesheet.Append(Escape(iof.project));
+            itemStylesheet.Append("</td><td>");
+            itemStylesheet.Append(Escape(iof.phase));
+            itemStylesheet.Append("</td><td>");
+            itemStylesheet.Append(Escape(iof.version));
+            itemStylesheet.Append("</td><td>");
+            itemStylesheet.Append(Escape(iof.category));
+            itemStylesheet.Append("</td><td>");
+            itemStylesheet.Append(Escape(iof.name));
+            itemStylesheet.Append("</td><td>");
+            itemStylesheet.Append(Escape(iof.startDate));
+            itemStylesheet.Append("</td><td>");
+            itemStylesheet.Append(Escape(iof.endDate));
+            itemStylesheet.Append("</td><td>");
+            itemStylesheet.Append(Escape(iof.description));
+            itemStylesheet.Append("</td>");
+
+        }
+
+        private void GetBaseTamplate(StringBuilder gridStyle) {
+            Aras.Server.Core.CallContext CCO = this.GetCCO();
+            gridStyle.Append("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+            gridStyle.Append("<table");
+            gridStyle.Append(" font=\"Microsoft Sans Serif-8\"");
+            gridStyle.Append(" sel_bgColor=\"steelbue\"");
+            gridStyle.Append(" sel_TextColor=\"white\"");
+            gridStyle.Append(" header_BgColor=\"buttonface\"");
+            gridStyle.Append(" expandroot=\"true\"");
+            gridStyle.Append(" expandall=\"false\"");
+            gridStyle.Append(" treelines=\"1\"");
+            gridStyle.Append(" editable=\"false\"");
+            gridStyle.Append(" draw_grid=\"true\"");
+            gridStyle.Append(" multiselect=\"true\"");
+            gridStyle.Append(" column_draggable=\"true\"");
+            gridStyle.Append(" enableHtml=\"false\"");
+            gridStyle.Append(" enterAsTab=\"false\"");
+            gridStyle.Append(" bgInvert=\"true\"");
+            gridStyle.Append(" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\"");
+            gridStyle.Append(" xmlns:aras=\"http://www.aras.com\"");
+            gridStyle.Append(" xmlns:usr=\"urn:the-xml-files:xslt\">");
+            gridStyle.Append(" <thead>");
+            gridStyle.Append("  <th align=\"c\">制御モデル番号(世代)</th>");
+            gridStyle.Append("  <th align=\"c\">プロジェクト名</th>");
+            gridStyle.Append("  <th align=\"c\">開発フェーズ名</th>");
+            gridStyle.Append("  <th align=\"c\">バージョン</th>");
+            gridStyle.Append("  <th align=\"c\">カテゴリ</th>");
+            gridStyle.Append("  <th align=\"c\">シミュレーション名</th>");
+            gridStyle.Append("  <th align=\"c\">開始日</th>");
+            gridStyle.Append("  <th align=\"c\">終了日</th>");
+            gridStyle.Append("  <th align=\"c\">備考</th>");
+            gridStyle.Append(" </thead>");
+            gridStyle.Append(" <columns>");
+            gridStyle.Append("  <column width=\"150\" edit=\"NOEDIT\"  align=\"l\" order=\"0\" />");
+            gridStyle.Append("  <column width=\"130\"  edit=\"NOEDIT\"  align=\"c\" order=\"1\" />");
+            gridStyle.Append("  <column width=\"140\"  edit=\"NOEDIT\"  align=\"c\" order=\"2\" />");
+            gridStyle.Append("  <column width=\"90\"  edit=\"NOEDIT\"  align=\"c\" order=\"3\" />");
+            gridStyle.Append("  <column width=\"100\"  edit=\"NOEDIT\"  align=\"c\" order=\"4\" />");
+            gridStyle.Append("  <column width=\"140\"  edit=\"NOEDIT\"  align=\"c\" order=\"5\" />");
+            gridStyle.Append("  <column width=\"100\"  edit=\"NOEDIT\"  align=\"c\" order=\"6\" />");
+            gridStyle.Append("  <column width=\"100\"  edit=\"NOEDIT\"  align=\"c\" order=\"7\" />");
+            gridStyle.Append("  <column width=\"200\"  edit=\"NOEDIT\"  align=\"l\" order=\"8\" />");
+            gridStyle.Append(" </columns>");
+            gridStyle.Append(" <menu>");
+            gridStyle.Append(" 	<emptytag/>");
+            gridStyle.Append(" </menu>");
+        }]]></method_code>
+  <method_type>C#</method_type>
+  <name>z_GetSimulationHistory</name>
+ </Item>
+</AML>

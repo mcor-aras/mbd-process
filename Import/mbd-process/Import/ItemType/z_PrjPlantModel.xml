@@ -1,0 +1,318 @@
+﻿<AML>
+ <Item type="ItemType" id="E41C9DF6A9804FD99D05B13793EDBDF3" action="add">
+  <allow_private_permission>1</allow_private_permission>
+  <auto_search>0</auto_search>
+  <enforce_discovery>1</enforce_discovery>
+  <hide_where_used>0</hide_where_used>
+  <history_template keyed_name="Default" type="History Template">3BC16EF9E52B4F9792AB76BCE0492F29</history_template>
+  <implementation_type>table</implementation_type>
+  <instance_data>Z_PRJPLANTMODEL</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>1</is_versionable>
+  <label xml:lang="en">Project Plant Model</label>
+  <label_plural xml:lang="en">02.Project Plant Model</label_plural>
+  <large_icon>../Images/Model.svg</large_icon>
+  <manual_versioning>0</manual_versioning>
+  <open_icon>../Images/Model.svg</open_icon>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+  <show_parameters_tab>1</show_parameters_tab>
+  <structure_view>tabs on</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <name>z_PrjPlantModel</name>
+  <Relationships>
+   <Item type="Property" id="30D53C437ABA4442ACD09808D4B80F14" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Config</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>60</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+    <name>z_config</name>
+   </Item>
+   <Item type="Property" id="3D59D3C9D16744D9AD88F2590BE94953" action="add">
+    <column_alignment>left</column_alignment>
+    <column_width>200</column_width>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Description</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>110</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <stored_length>256</stored_length>
+    <track_history>0</track_history>
+    <name>z_description</name>
+   </Item>
+   <Item type="Property" id="E95350ADD84F4E12B5156483314B43DB" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source>
+     <Item type="Property" action="get" select="id">
+      <name>z_version</name>
+      <source_id>E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+     </Item>
+    </data_source>
+    <data_type>foreign</data_type>
+    <foreign_property>
+     <Item type="Property" action="get" select="id">
+      <keyed_name>z_dev_phase_name</keyed_name>
+      <source_id>
+       <Item type="ItemType" action="get" select="id">
+        <name>z_Version</name>
+       </Item>
+      </source_id>
+     </Item>
+    </foreign_property>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Development phase name</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>20</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <track_history>0</track_history>
+    <name>z_dev_phase_name</name>
+   </Item>
+   <Item type="Property" id="1C5DBD96231D44128AA4890B71B99AA2" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Model Name</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>50</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <stored_length>32</stored_length>
+    <track_history>0</track_history>
+    <name>z_model_name</name>
+   </Item>
+   <Item type="Property" id="1D20D73CB2274C32BBFA07908BEC6FA7" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source>
+     <Item type="Property" action="get" select="id">
+      <name>z_version</name>
+      <source_id>E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+     </Item>
+    </data_source>
+    <data_type>foreign</data_type>
+    <foreign_property>
+     <Item type="Property" action="get" select="id">
+      <keyed_name>z_project_name</keyed_name>
+      <source_id>
+       <Item type="ItemType" action="get" select="id">
+        <name>z_Version</name>
+       </Item>
+      </source_id>
+     </Item>
+    </foreign_property>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Project Name</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <track_history>0</track_history>
+    <name>z_project_name</name>
+   </Item>
+   <Item type="View" id="370F0A5C302C4429AAB9F334177DD02B" action="add">
+    <client>js</client>
+    <related_id keyed_name="z_PrjPlantModel" type="Form">095484DFD6654C9797C59018750E5D3E</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <show_ssvc>0</show_ssvc>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="TOC Access" id="E602AD5E5B3E42E680A9A8CE060D8032" action="add">
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <category>Model</category>
+   </Item>
+   <Item type="Can Add" id="0170BB6320BA4659AA8BE25DB182E667" action="add">
+    <can_add>1</can_add>
+    <related_id keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+   </Item>
+   <Item type="Allowed Permission" id="F5D7E93C58EE464AAE58991785F2F870" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="Administrators" type="Permission">5BE54C871FB14F6EBC11596D1A010D26</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+ <Item type="ItemType" id="E41C9DF6A9804FD99D05B13793EDBDF3" action="edit">
+  <Relationships>
+   <Item type="Property" id="684289B4B34A420C9B4951C3064C886D" action="add">
+    <column_alignment>left</column_alignment>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>1</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <keyed_name_order>2</keyed_name_order>
+    <label xml:lang="en">Model No</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>40</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <stored_length>16</stored_length>
+    <track_history>0</track_history>
+    <name>z_model_no</name>
+   </Item>
+   <Item type="Property" id="E608EF53D08749B3B10FA1CE966883C2" action="add">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="z_Version" type="ItemType" name="z_Version">3AA8CE3142BC4E269AA99E73484676EF</data_source>
+    <data_type>item</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>1</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <item_behavior>float</item_behavior>
+    <keyed_name_order>1</keyed_name_order>
+    <label xml:lang="en">Version</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>30</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <track_history>0</track_history>
+    <name>z_version</name>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='E41C9DF6A9804FD99D05B13793EDBDF3' and name='created_by_id'">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="User" type="ItemType" name="User">45E899CD2859442982EB22BB2DF683E5</data_source>
+    <data_type>item</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <item_behavior>float</item_behavior>
+    <label xml:lang="en">Created User</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>1</readonly>
+    <sort_order>80</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <track_history>0</track_history>
+    <name>created_by_id</name>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='E41C9DF6A9804FD99D05B13793EDBDF3' and name='created_on'">
+    <column_alignment>left</column_alignment>
+    <data_type>date</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>1</is_required>
+    <label xml:lang="en">Created Date</label>
+    <pattern>short_date_time</pattern>
+    <range_inclusive>0</range_inclusive>
+    <readonly>1</readonly>
+    <sort_order>70</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <track_history>0</track_history>
+    <name>created_on</name>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='E41C9DF6A9804FD99D05B13793EDBDF3' and name='modified_by_id'">
+    <column_alignment>left</column_alignment>
+    <data_source keyed_name="User" type="ItemType" name="User">45E899CD2859442982EB22BB2DF683E5</data_source>
+    <data_type>item</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <item_behavior>float</item_behavior>
+    <label xml:lang="en">Update User</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>1</readonly>
+    <sort_order>100</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <track_history>0</track_history>
+    <name>modified_by_id</name>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='E41C9DF6A9804FD99D05B13793EDBDF3' and name='modified_on'">
+    <column_alignment>left</column_alignment>
+    <data_type>date</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Update Date</label>
+    <pattern>short_date_time</pattern>
+    <range_inclusive>0</range_inclusive>
+    <readonly>1</readonly>
+    <sort_order>90</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <track_history>0</track_history>
+    <name>modified_on</name>
+   </Item>
+   <Item type="Property" action="edit" where="source_id='E41C9DF6A9804FD99D05B13793EDBDF3' and name='superseded_date'">
+    <column_alignment>left</column_alignment>
+    <data_type>date</data_type>
+    <is_hidden>1</is_hidden>
+    <is_hidden2>1</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Superseded Date</label>
+    <pattern>short_date_time</pattern>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>3200</sort_order>
+    <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+    <track_history>0</track_history>
+    <name>superseded_date</name>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

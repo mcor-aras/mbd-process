@@ -1,0 +1,179 @@
+<export>
+  <Item keyed_name="1380F858180B40728FE414F63B509032" config_id="1380F858180B40728FE414F63B509032">
+    <property __name="label" en="MILS" ja="MILS" />
+  </Item>
+  <Item keyed_name="492CB34B3F2A4A1AAB3A01E1FB94030F" config_id="492CB34B3F2A4A1AAB3A01E1FB94030F">
+    <property __name="label" en="HILS" ja="HILS" />
+  </Item>
+  <Item keyed_name="5D531DC8DB58455B96F3C143DDEBF6DE" config_id="5D531DC8DB58455B96F3C143DDEBF6DE">
+    <property __name="label" en="SILS" ja="SILS" />
+  </Item>
+  <Item keyed_name="75A0FD140A3046E3BAF41621CF38F1D3" config_id="75A0FD140A3046E3BAF41621CF38F1D3">
+    <property __name="label" en="Actual machine test" ja="実機テスト" />
+  </Item>
+  <Item keyed_name="ABB58FDDFBD44297B84434A0DDCC5001" config_id="ABB58FDDFBD44297B84434A0DDCC5001">
+    <property __name="label" en="CILS" ja="CILS" />
+  </Item>
+  <Item keyed_name="02E49063EC5D4311A83D43AE26984482" config_id="02E49063EC5D4311A83D43AE26984482">
+    <property __name="label" en="SILS test case" ja="SILSテストケース" />
+  </Item>
+  <Item keyed_name="172253C3946C4011908CC3330487F5EA" config_id="172253C3946C4011908CC3330487F5EA">
+    <property __name="label" en="MILS test case" ja="MILSテストケース" />
+  </Item>
+  <Item keyed_name="3C3BFF15678B44709C22047C9AB9FE6F" config_id="3C3BFF15678B44709C22047C9AB9FE6F">
+    <property __name="label" en="Actual machine test case" ja="実機テストケース" />
+  </Item>
+  <Item keyed_name="57EE843BE3C34FD98C8267CEAEF6A937" config_id="57EE843BE3C34FD98C8267CEAEF6A937">
+    <property __name="label" en="HILS test case" ja="HILSテストケース" />
+  </Item>
+  <Item keyed_name="62CCB0F56BE74B5DACAFBB2E7A86B696" config_id="62CCB0F56BE74B5DACAFBB2E7A86B696">
+    <property __name="label" en="Report article" ja="報告資料" />
+  </Item>
+  <Item keyed_name="8800B31B8FCD48F98C44B191554D4FCC" config_id="8800B31B8FCD48F98C44B191554D4FCC">
+    <property __name="label" en="Specification sheet (for customer)" ja="仕様書(顧客用)" />
+  </Item>
+  <Item keyed_name="8F17EAAF0D2A446591162D227DE862D9" config_id="8F17EAAF0D2A446591162D227DE862D9">
+    <property __name="label" en="HILS result" ja="HILS結果" />
+  </Item>
+  <Item keyed_name="8FE74BD0249543889D781239925C5A13" config_id="8FE74BD0249543889D781239925C5A13">
+    <property __name="label" en="Required specifications" ja="要求仕様書" />
+  </Item>
+  <Item keyed_name="AA7E6663DC8149469A48429522FAF10A" config_id="AA7E6663DC8149469A48429522FAF10A">
+    <property __name="label" en="Performance test result" ja="性能テスト結果" />
+  </Item>
+  <Item keyed_name="B10F2977828D458CAA0EF78409C6545F" config_id="B10F2977828D458CAA0EF78409C6545F">
+    <property __name="label" en="Actual machine test result" ja="実機テスト結果" />
+  </Item>
+  <Item keyed_name="DB5DA58EFBDB4E77951DC24CFC912F4A" config_id="DB5DA58EFBDB4E77951DC24CFC912F4A">
+    <property __name="label" en="SILS result" ja="SILS結果" />
+  </Item>
+  <Item keyed_name="DBE9B929840741769E0DA15014FC00DC" config_id="DBE9B929840741769E0DA15014FC00DC">
+    <property __name="label" en="Specification sheet (internal use)" ja="仕様書(社内用)" />
+  </Item>
+  <Item keyed_name="F770B4D2DED94AB594C81A2D7DA57878" config_id="F770B4D2DED94AB594C81A2D7DA57878">
+    <property __name="label" en="MILS result" ja="MILS結果" />
+  </Item>
+  <Item keyed_name="0336D1D53C974E99B8325FB85E87449A" config_id="0336D1D53C974E99B8325FB85E87449A">
+    <property __name="label" en="Enterprise Search" ja="企業検索" />
+  </Item>
+  <Item keyed_name="16B4152DEE0C4B5E8FF55C413437B321" config_id="16B4152DEE0C4B5E8FF55C413437B321">
+    <property __name="label" en="Project Innovator" ja="プロジェクトInnovator" />
+  </Item>
+  <Item keyed_name="1A144CA23228434FB1AD9B4974D0560E" config_id="1A144CA23228434FB1AD9B4974D0560E">
+    <property __name="label" en="Training Innovator" ja="トレーニング Innovator" />
+  </Item>
+  <Item keyed_name="1C7079D7CCF24601A686945B53830263" config_id="1C7079D7CCF24601A686945B53830263">
+    <property __name="label" en="Content Modeling" ja="コンテントモデリング" />
+  </Item>
+  <Item keyed_name="2AAC4694A39646F28F1DBEC8090CAC0E" config_id="2AAC4694A39646F28F1DBEC8090CAC0E">
+    <property __name="label" en="Templates" ja="テンプレート" />
+  </Item>
+  <Item keyed_name="3E5EDCEC127C4E3785771420668CDDB8" config_id="3E5EDCEC127C4E3785771420668CDDB8">
+    <property __name="label" en="Users and Groups" ja="ユーザ＆グループ" />
+  </Item>
+  <Item keyed_name="4E1DF0E94D2D420CBE07D4F3557C24A1" config_id="4E1DF0E94D2D420CBE07D4F3557C24A1">
+    <property __name="label" en="Design Innovator" ja="設計Innovator" />
+  </Item>
+  <Item keyed_name="5302C8DBEC4447D2AD8860902F8CBB83" config_id="5302C8DBEC4447D2AD8860902F8CBB83">
+    <property __name="label" en="Documents" ja="ドキュメント" />
+  </Item>
+  <Item keyed_name="54B00FBBE6F54EFA9C4572C773DD5A62" config_id="54B00FBBE6F54EFA9C4572C773DD5A62">
+    <property __name="label" en="Package Innovator" ja="パケージInnovator" />
+  </Item>
+  <Item keyed_name="5A43F04E53AD420CBD8C0B3EF86DAF39" config_id="5A43F04E53AD420CBD8C0B3EF86DAF39">
+    <property __name="label" en="Library" ja="ライブラリー" />
+  </Item>
+  <Item keyed_name="5BAF587E1EB3413FB1CEB056459CDF90" config_id="5BAF587E1EB3413FB1CEB056459CDF90">
+    <property __name="label" en="Data Modeling" ja="データモデリング" />
+  </Item>
+  <Item keyed_name="605198BC1A2E408090CA798892D77E5E" config_id="605198BC1A2E408090CA798892D77E5E">
+    <property __name="label" en="Process Innovator" ja="プロセスInnovator " />
+  </Item>
+  <Item keyed_name="631836F637F847959F3466D433016CCD" config_id="631836F637F847959F3466D433016CCD">
+    <property __name="label" en="Tooling Innovator" ja="ツーリングInnovator" />
+  </Item>
+  <Item keyed_name="6800B070142F4DC7B8235966374B841A" config_id="6800B070142F4DC7B8235966374B841A">
+    <property __name="label" en="Supplier Innovator" ja="サプライヤーInnovator" />
+  </Item>
+  <Item keyed_name="695C3E6E2CA644A7AD80026D07B6CC69" config_id="695C3E6E2CA644A7AD80026D07B6CC69">
+    <property __name="label" en="Sales Innovator" ja="売行きInnovator" />
+  </Item>
+  <Item keyed_name="6A46876753A84E96BD6D710D34325453" config_id="6A46876753A84E96BD6D710D34325453">
+    <property __name="label" en="Notification" ja="通知設定" />
+  </Item>
+  <Item keyed_name="712769AD781040A68D235BA4C45019C9" config_id="712769AD781040A68D235BA4C45019C9">
+    <property __name="label" en="Configuration" ja="コンフィギュレーション" />
+  </Item>
+  <Item keyed_name="7EF0C11AF2A34E288C71DE7E3ACB39C0" config_id="7EF0C11AF2A34E288C71DE7E3ACB39C0">
+    <property __name="label" en="Cloud Services" ja="クラウドサービス" />
+  </Item>
+  <Item keyed_name="7F439663C36244AF915AEBCF854BBD29" config_id="7F439663C36244AF915AEBCF854BBD29">
+    <property __name="label" en="Technical Documentation" ja="技術文書" />
+  </Item>
+  <Item keyed_name="80A3528A2BDB428D9C39439C34EB6993" config_id="80A3528A2BDB428D9C39439C34EB6993">
+    <property __name="label" en="Dashboards" ja="ダッシュボード" />
+  </Item>
+  <Item keyed_name="825C83E2BA1F4DA483DD311401CB34CF" config_id="825C83E2BA1F4DA483DD311401CB34CF">
+    <property __name="label" en="" ja="モデル" />
+  </Item>
+  <Item keyed_name="857AF5340B3E414A913794C2AA87CDE6" config_id="857AF5340B3E414A913794C2AA87CDE6">
+    <property __name="label" en="Change Management" ja="変更管理" />
+  </Item>
+  <Item keyed_name="92FFE624FDEA44A0AA1A2525B216031E" config_id="92FFE624FDEA44A0AA1A2525B216031E">
+    <property __name="label" en="User Interface" ja="ユーザインターフェース" />
+  </Item>
+  <Item keyed_name="9C7E053938BC40CB918A40928DFDB3CD" config_id="9C7E053938BC40CB918A40928DFDB3CD">
+    <property __name="label" en="Document Center" ja="ドキュメントセンター" />
+  </Item>
+  <Item keyed_name="A1613B4ED40440518D5C2D6B2B130191" config_id="A1613B4ED40440518D5C2D6B2B130191">
+    <property __name="label" en="File Exchange" ja="ファイル交換" />
+  </Item>
+  <Item keyed_name="A3E2C5A4EC83469BB2A22C952706ACB0" config_id="A3E2C5A4EC83469BB2A22C952706ACB0">
+    <property __name="label" en="Sourcing" ja="調達" />
+  </Item>
+  <Item keyed_name="A4A9F520EBAC497B9B582765C74091C8" config_id="A4A9F520EBAC497B9B582765C74091C8">
+    <property __name="label" en="Process Flow" ja="プロセスフロー" />
+  </Item>
+  <Item keyed_name="A510887C079C49D0B6921AA3863316BC" config_id="A510887C079C49D0B6921AA3863316BC">
+    <property __name="label" en="Localization" ja="ローカライゼーション" />
+  </Item>
+  <Item keyed_name="A7200431932C4D8598295BF54AA6D84F" config_id="A7200431932C4D8598295BF54AA6D84F">
+    <property __name="label" en="Portfolio" ja="ポートフォリオ" />
+  </Item>
+  <Item keyed_name="AECE6B52DFC6421EA019402BCBBCBFC5" config_id="AECE6B52DFC6421EA019402BCBBCBFC5">
+    <property __name="label" en="Process" ja="プロセス" />
+  </Item>
+  <Item keyed_name="B3C086E33A5743509CBCAB98A2F2442A" config_id="B3C086E33A5743509CBCAB98A2F2442A">
+    <property __name="label" en="Design" ja="設計" />
+  </Item>
+  <Item keyed_name="B414947279784DEB9F1203F70613106F" config_id="B414947279784DEB9F1203F70613106F">
+    <property __name="label" en="File Handling" ja="ファイルハンドリング" />
+  </Item>
+  <Item keyed_name="BB41246BD5CE4D3E8B21D75515FF0D9D" config_id="BB41246BD5CE4D3E8B21D75515FF0D9D">
+    <property __name="label" en="Quality Management" ja="品質管理" />
+  </Item>
+  <Item keyed_name="BC3CE8CF73EB49D5BFA6E771F9C76884" config_id="BC3CE8CF73EB49D5BFA6E771F9C76884">
+    <property __name="label" en="Searchs And Reports" ja="検索とレポート" />
+  </Item>
+  <Item keyed_name="CDB896F98D834EABB2A08055B2023F56" config_id="CDB896F98D834EABB2A08055B2023F56">
+    <property __name="label" en="Vaulting Files" ja="Vaulting ファイル" />
+  </Item>
+  <Item keyed_name="CE710042D98740A7B6B866209034A4EF" config_id="CE710042D98740A7B6B866209034A4EF">
+    <property __name="label" en="System Events" ja="システムイベント" />
+  </Item>
+  <Item keyed_name="E0D92BE5B7A34E029BA77FEC8E429626" config_id="E0D92BE5B7A34E029BA77FEC8E429626">
+    <property __name="label" en="Business Logic" ja="ビジネスロジック" />
+  </Item>
+  <Item keyed_name="ECA96A5C0D2D41B38DD608B9B7424A7F" config_id="ECA96A5C0D2D41B38DD608B9B7424A7F">
+    <property __name="label" en="Administration" ja="アドミニストレータ" />
+  </Item>
+  <Item keyed_name="F3D658B4392A40129C2AF0EFA0B04A98" config_id="F3D658B4392A40129C2AF0EFA0B04A98">
+    <property __name="label" en="Quality Innovator" ja="質Innovator" />
+  </Item>
+  <Item keyed_name="F5D31268E42E433085FAE2DBCC4C5A12" config_id="F5D31268E42E433085FAE2DBCC4C5A12">
+    <property __name="label" en="My Innovator" ja="My Innovator" />
+  </Item>
+  <Item keyed_name="FD3769B958A4498A88452CFB26E1212F" config_id="FD3769B958A4498A88452CFB26E1212F">
+    <property __name="label" en="Secure Social" ja="セキュアソーシャル" />
+  </Item>
+</export>

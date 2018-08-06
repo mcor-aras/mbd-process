@@ -1,0 +1,42 @@
+﻿<AML>
+ <Item type="RelationshipType" id="3EA600E9ADBB43DBB9B240D8292019D9" action="add" dependencyLevel="0">
+  <auto_search>1</auto_search>
+  <behavior>float</behavior>
+  <copy_permissions>0</copy_permissions>
+  <create_related>0</create_related>
+  <hide_in_all>0</hide_in_all>
+  <inc_rel_key_name>1</inc_rel_key_name>
+  <inc_related_key_name>1</inc_related_key_name>
+  <is_list_type>0</is_list_type>
+  <label xml:lang="en">Document</label>
+  <new_show_related>0</new_show_related>
+  <related_id keyed_name="z_Document" type="ItemType" name="z_Document">B98CBF817A594AF4A979EE8A7205B2DF</related_id>
+  <related_notnull>1</related_notnull>
+  <related_option>2</related_option>
+  <relationship_id keyed_name="z_PrjPlantModel Document" type="ItemType" name="z_PrjPlantModel Document">
+   <Item type="ItemType" id="D7365EFDCFAE4B4D9D1DFEABEEA00C2F" action="add">
+    <allow_private_permission>1</allow_private_permission>
+    <auto_search>0</auto_search>
+    <enforce_discovery>0</enforce_discovery>
+    <hide_where_used>0</hide_where_used>
+    <implementation_type>table</implementation_type>
+    <instance_data>Z_PRJPLANTMODEL_DOCUMENT</instance_data>
+    <is_dependent>0</is_dependent>
+    <is_relationship>1</is_relationship>
+    <is_versionable>0</is_versionable>
+    <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
+    <show_parameters_tab>1</show_parameters_tab>
+    <structure_view>タブオフ</structure_view>
+    <unlock_on_logout>0</unlock_on_logout>
+    <use_src_access>1</use_src_access>
+    <name>z_PrjPlantModel Document</name>
+    <Relationships />
+   </Item>
+  </relationship_id>
+  <sort_order>60</sort_order>
+  <source_id keyed_name="z_PrjPlantModel" type="ItemType" name="z_PrjPlantModel">E41C9DF6A9804FD99D05B13793EDBDF3</source_id>
+  <name>z_PrjPlantModel Document</name>
+ </Item>
+ <Item type="View" action="delete" where="source_id='D7365EFDCFAE4B4D9D1DFEABEEA00C2F'" />
+ <Item type="Form" action="delete" where="name='z_PrjPlantModel Document'" />
+</AML>

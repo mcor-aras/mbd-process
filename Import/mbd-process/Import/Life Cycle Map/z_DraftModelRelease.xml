@@ -1,0 +1,39 @@
+﻿<AML>
+ <Item type="Life Cycle Map" id="CF0275A869C44A08BC4AD74E6D3D4C52" action="add">
+  <description />
+  <start_state keyed_name="In Work" type="Life Cycle State">FE6F82034CF340649FF6CEFFA7ACEEA0</start_state>
+  <name>z_DraftModelRelease</name>
+  <Relationships>
+   <Item type="Life Cycle State" id="9F4DBB02BFD94B2D8E4F1BFEC2F3F7FE" action="add">
+    <image>../images/LifeCycleState.svg</image>
+    <label xml:lang="en">Approved</label>
+    <set_is_released>1</set_is_released>
+    <set_not_lockable>1</set_not_lockable>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="Life Cycle Map">CF0275A869C44A08BC4AD74E6D3D4C52</source_id>
+    <x>166</x>
+    <y>18</y>
+    <name>Approved</name>
+   </Item>
+   <Item type="Life Cycle State" id="FE6F82034CF340649FF6CEFFA7ACEEA0" action="add">
+    <image>../images/LifeCycleState.svg</image>
+    <label xml:lang="en">In Work</label>
+    <set_is_released>0</set_is_released>
+    <set_not_lockable>0</set_not_lockable>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="Life Cycle Map">CF0275A869C44A08BC4AD74E6D3D4C52</source_id>
+    <x>20</x>
+    <y>20</y>
+    <name>In Work</name>
+   </Item>
+   <Item type="Life Cycle Transition" id="DDDDE37DADBD46E1A8A143152789320A" action="add">
+    <from_state keyed_name="In Work" type="Life Cycle State">FE6F82034CF340649FF6CEFFA7ACEEA0</from_state>
+    <get_comment>0</get_comment>
+    <role keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</role>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="z_DraftModelRelease" type="Life Cycle Map">CF0275A869C44A08BC4AD74E6D3D4C52</source_id>
+    <to_state keyed_name="Approved" type="Life Cycle State">9F4DBB02BFD94B2D8E4F1BFEC2F3F7FE</to_state>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

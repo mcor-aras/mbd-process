@@ -1,0 +1,173 @@
+<export>
+  <Item keyed_name="z_Version Document" config_id="EDEE78A36EED4029B3069CF2B2EBC0CD">
+    <property __name="label" en="Document" ja="文書" />
+  </Item>
+  <Item keyed_name="z_Version PrjControlModel" config_id="282C5BBCE7A54CE3A8866FC31F132D08">
+    <property __name="label" en="Control model" ja="制御モデル" />
+  </Item>
+  <Item keyed_name="z_Version PrjPlantModel" config_id="DF687E98EDBB4D18AA9D233ABC1BBA7F">
+    <property __name="label" en="Plant model" ja="プラントモデル" />
+  </Item>
+  <Item keyed_name="z_Version Signoff" config_id="2099D729CCC84E0CB4DF9273FDEC78F8">
+    <property __name="label" en="Workflow" ja="ワークフロー" />
+  </Item>
+  <Item keyed_name="z_Version Simulation" config_id="AC9421BE1B1F46FDA264E9F3EAA998CD">
+    <property __name="label" en="Simulation" ja="シミュレーション" />
+  </Item>
+  <Item keyed_name="z_PrjControlModel Document" config_id="501C09FB86AF4D0B87A8E294F6EAC72A">
+    <property __name="label" en="Document" ja="文書" />
+  </Item>
+  <Item keyed_name="z_PrjControlModel File" config_id="D67B3C909DED4403B6B2E32B6A889F78">
+    <property __name="label" en="File(Model)" ja="ファイル(モデル)" />
+  </Item>
+  <Item keyed_name="z_PrjControlModel FileSF" config_id="5D41C08AACF14A5CA55A991FAE6C0C9A">
+    <property __name="label" en="File(S-Function)" ja="ファイル(S-Function)" />
+  </Item>
+  <Item keyed_name="z_PrjControlModel Model" config_id="0480FE1FEFE2406BB46B88B7AB1E2CAE">
+    <property __name="label" en="Model" ja="子モデル" />
+  </Item>
+  <Item keyed_name="z_PrjControlModel Parameter" config_id="8BC5BE7929AF42228842A5EB4E9476BD">
+    <property __name="label" en="Parameter" ja="パラメータ" />
+  </Item>
+  <Item keyed_name="z_PrjControlModel SourceCode" config_id="E7E4C5D755B54093B0F5DC5619C6AAD3">
+    <property __name="label" en="Sourcecode" ja="ソースコード" />
+  </Item>
+  <Item keyed_name="z_ComControlModel Document" config_id="B34E1469660C4786BECCE55F40DD7341">
+    <property __name="label" en="Document" ja="文書" />
+  </Item>
+  <Item keyed_name="z_ComControlModel File" config_id="B37E4081C33544F09BB0672885B38162">
+    <property __name="label" en="File(Model)" ja="ファイル(モデル)" />
+  </Item>
+  <Item keyed_name="z_ComControlModel FileSF" config_id="401D37275D8E48A7BA2F54532432CAE3">
+    <property __name="label" en="File(S-Function)" ja="ファイル(S-Function)" />
+  </Item>
+  <Item keyed_name="z_ComControlModel Model" config_id="60BB3A4AD0B849BFAC5448F96D59C3FB">
+    <property __name="label" en="Model" ja="子モデル" />
+  </Item>
+  <Item keyed_name="z_ComControlModel Parameter" config_id="B2BFEDAF099D4AD59D09F898DF4D084D">
+    <property __name="label" en="Parameter" ja="パラメータ" />
+  </Item>
+  <Item keyed_name="z_ComControlModel SourceCode" config_id="F5E9625B4E57471899524FED1471783C">
+    <property __name="label" en="Sourcecode" ja="ソースコード" />
+  </Item>
+  <Item keyed_name="z_Simulation ComControlModel" config_id="E4E40A6B862744A99D354A8FCF79861E">
+    <property __name="label" en="Common control model" ja="共通制御モデル" />
+  </Item>
+  <Item keyed_name="z_Simulation ComPlantModel" config_id="F067A77340514F2B8B06E8E831FC0CF1">
+    <property __name="label" en="Common plant model" ja="共通プラントモデル" />
+  </Item>
+  <Item keyed_name="z_Simulation Document" config_id="C7A99213B02E464DAA16EB930FAAF1D6">
+    <property __name="label" en="Document" ja="文書" />
+  </Item>
+  <Item keyed_name="z_Simulation History" config_id="B81D6724BF974451A72E7479EF520B9A">
+    <property __name="label" en="History" ja="シミュレーション履歴" />
+  </Item>
+  <Item keyed_name="z_Simulation Parameter" config_id="2AA0CE60EA064FBD91C73F572BAADB9D">
+    <property __name="label" en="Parameter" ja="パラメータ" />
+  </Item>
+  <Item keyed_name="z_Simulation PrjControlModel" config_id="AA0306FD9E51415D882F970EFF79196E">
+    <property __name="label" en="Control model" ja="制御モデル" />
+  </Item>
+  <Item keyed_name="z_Simulation PrjPlantModel" config_id="45BAF117A6334B6E92DB93D1EED3B818">
+    <property __name="label" en="Plant model" ja="プラントモデル" />
+  </Item>
+  <Item keyed_name="z_Simulation PrjTestModel" config_id="54AEA1B759474CD88771EB2F67308A58">
+    <property __name="label" en="Test model" ja="テストモデル" />
+  </Item>
+  <Item keyed_name="z_Simulation Signoff" config_id="021E7AF6100C4C1A88C0D46DDD133EA3">
+    <property __name="label" en="Workflow" ja="ワークフロー" />
+  </Item>
+  <Item keyed_name="z_PrjTestModel Document" config_id="F120EFB8524A49F2885235F2B7F56E9A">
+    <property __name="label" en="Document" ja="文書" />
+  </Item>
+  <Item keyed_name="z_PrjTestModel File" config_id="C3523FC1BDAC4DA5A65B4F668C2B6210">
+    <property __name="label" en="File(Model)" ja="ファイル(モデル)" />
+  </Item>
+  <Item keyed_name="z_PrjTestModel FileSF" config_id="26E2C1C4801E42FC88B4A4DEF572D9C4">
+    <property __name="label" en="File(S-Function)" ja="モデル(S-Function)" />
+  </Item>
+  <Item keyed_name="z_PrjTestModel Model" config_id="5462EC8604EA4BCEA6E57004BD67C7EE">
+    <property __name="label" en="Model" ja="子モデル" />
+  </Item>
+  <Item keyed_name="z_PrjTestModel Parameter" config_id="E8E0C800B59F44F79E03920BDD0CD46A">
+    <property __name="label" en="Parameter" ja="パラメータ" />
+  </Item>
+  <Item keyed_name="z_PrjTestModel SourceCode" config_id="7B25BB209D27467C9CE9702670AF76AE">
+    <property __name="label" en="sourcecode" ja="ソースコード" />
+  </Item>
+  <Item keyed_name="z_DraftModelRelease Model" config_id="49C418C95DC24B669CD4AFF4F90FD9B8">
+    <property __name="label" en="Model" ja="モデル" />
+  </Item>
+  <Item keyed_name="z_ComPlantModel Document" config_id="EB17E85EFA6642FE8EEDE0FC93B7B6A8">
+    <property __name="label" en="Document" ja="文書" />
+  </Item>
+  <Item keyed_name="z_ComPlantModel File" config_id="15643478AB5949A28F694D4984E8A5F4">
+    <property __name="label" en="File(Model)" ja="ファイル(モデル)" />
+  </Item>
+  <Item keyed_name="z_ComPlantModel FileSF" config_id="0900D6A27109485798EC079248405BAE">
+    <property __name="label" en="File(S-Function)" ja="ファイル(S-Function)" />
+  </Item>
+  <Item keyed_name="z_ComPlantModel Model" config_id="A5D4E695553F4A83974DF3FCB6AA71DD">
+    <property __name="label" en="Model" ja="子モデル" />
+  </Item>
+  <Item keyed_name="z_ComPlantModel Parameter" config_id="1845286481CC493383DCF6EE17F35057">
+    <property __name="label" en="Parameter" ja="パラメータ" />
+  </Item>
+  <Item keyed_name="z_ComPlantModel SourceCode" config_id="2BFFB3D010024B6BA27504AA5BAF2C83">
+    <property __name="label" en="Sourcecode" ja="ソースコード" />
+  </Item>
+  <Item keyed_name="z_Parameter File" config_id="6A4708ADF5884351914AF5D3B105F4D1">
+    <property __name="label" en="File" ja="ファイル" />
+  </Item>
+  <Item keyed_name="z_SubSystemTree" config_id="7A9769A5E17B472EB4640CB1D19B4A04">
+    <property __name="label" en="Model composition" ja="モデル構成" />
+  </Item>
+  <Item keyed_name="z_Document File" config_id="E3F6F7D26DF84CD9B27F1132BB4B69D4">
+    <property __name="label" en="File" ja="ファイル" />
+  </Item>
+  <Item keyed_name="z_Project Document" config_id="6185E0A327C14E959A6A5EBEBF7EC9B4">
+    <property __name="label" en="Document" ja="文書" />
+  </Item>
+  <Item keyed_name="z_Project Version" config_id="C5C44CD8E9874D7788DF7C594E609210">
+    <property __name="label" en="Version" ja="開発フェーズ" />
+  </Item>
+  <Item keyed_name="z_PrjPlantModel Document" config_id="3EA600E9ADBB43DBB9B240D8292019D9">
+    <property __name="label" en="Document" ja="文書" />
+  </Item>
+  <Item keyed_name="z_PrjPlantModel File" config_id="5B2B256D38EB4431BF81EB9ADEB634D5">
+    <property __name="label" en="File(Model)" ja="ファイル(モデル)" />
+  </Item>
+  <Item keyed_name="z_PrjPlantModel FileSF" config_id="CA2FE4B9605D47AA8A382B5D01E6F59F">
+    <property __name="label" en="File(S-Function)" ja="ファイル(S-Function)" />
+  </Item>
+  <Item keyed_name="z_PrjPlantModel Model" config_id="5688292B60334AED978FF77EA0A0D8CE">
+    <property __name="label" en="Model" ja="子モデル" />
+  </Item>
+  <Item keyed_name="z_PrjPlantModel Parameter" config_id="2F5E83EB59B04D0DB5F047B763740846">
+    <property __name="label" en="Parameter" ja="パラメータ" />
+  </Item>
+  <Item keyed_name="z_PrjPlantModel SourceCode" config_id="10E6DE4B09E8416CAC4DC3A20461F1EE">
+    <property __name="label" en="Sourcecode" ja="ソースコード" />
+  </Item>
+  <Item keyed_name="z_ModelDesignReview Model" config_id="0B4AA7E6552D47AEAF523238E8372330">
+    <property __name="label" en="Model" ja="モデル" />
+  </Item>
+  <Item keyed_name="z_ModelDesignReview Signoff" config_id="F45CFA18032D4E24BDB06EB89E70FE1B">
+    <property __name="label" en="Workflow" ja="ワークフロー" />
+  </Item>
+  <Item keyed_name="z_Sourcecode File" config_id="A55DA48579744F36AAD9E0AF9F429EE8">
+    <property __name="label" en="File" ja="ファイル" />
+  </Item>
+  <Item keyed_name="z_DraftModel File" config_id="00091CB176F6418D8EC2D53F161261A8">
+    <property __name="label" en="File(Model)" ja="ファイル(モデル)" />
+  </Item>
+  <Item keyed_name="z_DraftModel Review" config_id="D14ADADF6B0D46B99A1B9D0EFC9AE47A">
+    <property __name="label" en="Review" ja="レビュー記録" />
+  </Item>
+  <Item keyed_name="z_DraftModel SubSystem" config_id="9FBF8C0F58DB480CA4D4BAF5D9D7697B">
+    <property __name="label" en="SubSystem" ja="サブシステム" />
+  </Item>
+  <Item keyed_name="z_DraftModel SubSystemTree" config_id="EE45D16CCDF14344904A2DA9FB2B22E5">
+    <property __name="label" en="Model composition" ja="モデル構成" />
+  </Item>
+</export>

@@ -1,0 +1,6 @@
+<imports>
+  <package name="jp.co.mcor.mbd-process" path="mbd-process\Import" />
+  <package name="com.aras.innovator.core" path=".\">
+    <dependson name="com.aras.innovator.admin" />
+  </package>
+</imports>

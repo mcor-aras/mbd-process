@@ -1,0 +1,86 @@
+﻿<AML>
+ <Item type="List" id="5601CE2A10A24D9B84D4E20BC9D51DD6" action="add">
+  <description>文書のカテゴリ</description>
+  <name>z_DocumentCategory</name>
+  <Relationships>
+   <Item type="Value" id="8FE74BD0249543889D781239925C5A13" action="add">
+    <label xml:lang="en">Required specifications</label>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>10</value>
+   </Item>
+   <Item type="Value" id="8800B31B8FCD48F98C44B191554D4FCC" action="add">
+    <label xml:lang="en">Specification sheet (for customer)</label>
+    <sort_order>20</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>20</value>
+   </Item>
+   <Item type="Value" id="DBE9B929840741769E0DA15014FC00DC" action="add">
+    <label xml:lang="en">Specification sheet (internal use)</label>
+    <sort_order>30</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>30</value>
+   </Item>
+   <Item type="Value" id="62CCB0F56BE74B5DACAFBB2E7A86B696" action="add">
+    <label xml:lang="en">Report article</label>
+    <sort_order>40</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>40</value>
+   </Item>
+   <Item type="Value" id="172253C3946C4011908CC3330487F5EA" action="add">
+    <label xml:lang="en">MILS test case</label>
+    <sort_order>50</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>50</value>
+   </Item>
+   <Item type="Value" id="F770B4D2DED94AB594C81A2D7DA57878" action="add">
+    <label xml:lang="en">MILS result</label>
+    <sort_order>60</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>60</value>
+   </Item>
+   <Item type="Value" id="02E49063EC5D4311A83D43AE26984482" action="add">
+    <label xml:lang="en">SILS test case</label>
+    <sort_order>70</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>70</value>
+   </Item>
+   <Item type="Value" id="DB5DA58EFBDB4E77951DC24CFC912F4A" action="add">
+    <label xml:lang="en">SILS result</label>
+    <sort_order>80</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>80</value>
+   </Item>
+   <Item type="Value" id="57EE843BE3C34FD98C8267CEAEF6A937" action="add">
+    <label xml:lang="en">HILS test case</label>
+    <sort_order>90</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>90</value>
+   </Item>
+   <Item type="Value" id="8F17EAAF0D2A446591162D227DE862D9" action="add">
+    <label xml:lang="en">HILS result</label>
+    <sort_order>100</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>100</value>
+   </Item>
+   <Item type="Value" id="3C3BFF15678B44709C22047C9AB9FE6F" action="add">
+    <label xml:lang="en">Actual machine test case</label>
+    <sort_order>110</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>110</value>
+   </Item>
+   <Item type="Value" id="B10F2977828D458CAA0EF78409C6545F" action="add">
+    <label xml:lang="en">Actual machine test result</label>
+    <sort_order>120</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>120</value>
+   </Item>
+   <Item type="Value" id="AA7E6663DC8149469A48429522FAF10A" action="add">
+    <label xml:lang="en">Performance test result</label>
+    <sort_order>130</sort_order>
+    <source_id keyed_name="z_DocumentCategory" type="List">5601CE2A10A24D9B84D4E20BC9D51DD6</source_id>
+    <value>130</value>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

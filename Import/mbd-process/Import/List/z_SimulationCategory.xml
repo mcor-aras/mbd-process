@@ -1,0 +1,37 @@
+﻿<AML>
+ <Item type="List" id="1C82BC2293FA4E1390E117EA6A50CAD7" action="add">
+  <name>z_SimulationCategory</name>
+  <Relationships>
+   <Item type="Value" id="1380F858180B40728FE414F63B509032" action="add">
+    <label xml:lang="en">MILS</label>
+    <sort_order>10</sort_order>
+    <source_id keyed_name="z_SimulationCategory" type="List">1C82BC2293FA4E1390E117EA6A50CAD7</source_id>
+    <value>1</value>
+   </Item>
+   <Item type="Value" id="5D531DC8DB58455B96F3C143DDEBF6DE" action="add">
+    <label xml:lang="en">SILS</label>
+    <sort_order>20</sort_order>
+    <source_id keyed_name="z_SimulationCategory" type="List">1C82BC2293FA4E1390E117EA6A50CAD7</source_id>
+    <value>2</value>
+   </Item>
+   <Item type="Value" id="ABB58FDDFBD44297B84434A0DDCC5001" action="add">
+    <label xml:lang="en">CILS</label>
+    <sort_order>30</sort_order>
+    <source_id keyed_name="z_SimulationCategory" type="List">1C82BC2293FA4E1390E117EA6A50CAD7</source_id>
+    <value>3</value>
+   </Item>
+   <Item type="Value" id="492CB34B3F2A4A1AAB3A01E1FB94030F" action="add">
+    <label xml:lang="en">HILS</label>
+    <sort_order>40</sort_order>
+    <source_id keyed_name="z_SimulationCategory" type="List">1C82BC2293FA4E1390E117EA6A50CAD7</source_id>
+    <value>4</value>
+   </Item>
+   <Item type="Value" id="75A0FD140A3046E3BAF41621CF38F1D3" action="add">
+    <label xml:lang="en">Actual machine test</label>
+    <sort_order>50</sort_order>
+    <source_id keyed_name="z_SimulationCategory" type="List">1C82BC2293FA4E1390E117EA6A50CAD7</source_id>
+    <value>5</value>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>
