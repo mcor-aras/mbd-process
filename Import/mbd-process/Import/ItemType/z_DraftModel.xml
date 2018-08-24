@@ -22,50 +22,6 @@
   <use_src_access>0</use_src_access>
   <name>z_DraftModel</name>
   <Relationships>
-   <Item type="DiscussionTemplate" id="249EE084C1A348DE86A623562B1B2E03" action="add">
-    <file_selection_depth>-1</file_selection_depth>
-    <item_selection_depth>-1</item_selection_depth>
-    <sort_order>128</sort_order>
-    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
-    <visibility_supported>1</visibility_supported>
-    <Relationships>
-     <Item type="FeedTemplate" id="364848522D2C4C47BEB23A9D51646BDD" action="add">
-      <feed_type>Board</feed_type>
-      <reference>this</reference>
-      <sort_order>128</sort_order>
-      <source_id keyed_name="249EE084C1A348DE86A623562B1B2E03" type="DiscussionTemplate">249EE084C1A348DE86A623562B1B2E03</source_id>
-      <Relationships>
-       <Item type="FileSelectorTemplate" id="635FA25789F94F578450E2BE7B9A0A18" action="add">
-        <filter>7869D76D50ED4BD4985BECB20B1102F7|992B142FCE6C4EF8B71417220CD7E92D|50AF497B7A114235979F882CEC8EFDF6|8A85DD9A6E0346F5AE423314E3650041</filter>
-        <reference>z_DraftModel SubSystem(z_image_file)</reference>
-        <sort_order>128</sort_order>
-        <source_id keyed_name="364848522D2C4C47BEB23A9D51646BDD" type="FeedTemplate">364848522D2C4C47BEB23A9D51646BDD</source_id>
-        <tooltip_template xml:lang="en">File ${File:filename} from ${ItemType:label} ${Item:keyed_name}</tooltip_template>
-       </Item>
-       <Item type="FileSelectorTemplate" id="366A9BAEF15A409BBA6BC35F690FFF4E" action="add">
-        <filter>7869D76D50ED4BD4985BECB20B1102F7|992B142FCE6C4EF8B71417220CD7E92D|50AF497B7A114235979F882CEC8EFDF6|8A85DD9A6E0346F5AE423314E3650041</filter>
-        <reference>z_DraftModel File(related_id)</reference>
-        <sort_order>256</sort_order>
-        <source_id keyed_name="364848522D2C4C47BEB23A9D51646BDD" type="FeedTemplate">364848522D2C4C47BEB23A9D51646BDD</source_id>
-        <tooltip_template xml:lang="en">File ${File:filename} from ${ItemType:label} ${Item:keyed_name}</tooltip_template>
-       </Item>
-      </Relationships>
-     </Item>
-     <Item type="DiscussionTemplateView" id="0A9E9AE5D7204360B8BB48222880B417" action="add">
-      <client>js</client>
-      <related_id keyed_name="5FA00C365F5A404FA17DE3F90646346C" type="SSVCPresentationConfiguration">
-       <Item type="SSVCPresentationConfiguration" id="5FA00C365F5A404FA17DE3F90646346C" action="add">
-        <discussion_panel_behavior>discPanelOff</discussion_panel_behavior>
-        <form_tooltip_template xml:lang="en">Form of ${ItemType:label} ${Item:keyed_name}</form_tooltip_template>
-        <sm_template keyed_name="F1E9620C1AB3408588708B68E18D51DE" type="SecureMessageViewTemplate">F1E9620C1AB3408588708B68E18D51DE</sm_template>
-        <name>5FA00C365F5A404FA17DE3F90646346C</name>
-       </Item>
-      </related_id>
-      <sort_order>128</sort_order>
-      <source_id keyed_name="249EE084C1A348DE86A623562B1B2E03" type="DiscussionTemplate">249EE084C1A348DE86A623562B1B2E03</source_id>
-     </Item>
-    </Relationships>
-   </Item>
    <Item type="Property" id="CF12E79F8C0A486599CE77AE46F0661D" action="add">
     <column_alignment>left</column_alignment>
     <data_type>string</data_type>
@@ -96,11 +52,6 @@
     <sort_order>128</sort_order>
     <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
     <type>default</type>
-   </Item>
-   <Item type="Item Action" id="3D9EA537A6D84FB7A3368BF7DA240A27" action="add">
-    <related_id keyed_name="Change Discussion Definition" type="Action">5B155B40AD8F405D812EF95BC5848214</related_id>
-    <sort_order>128</sort_order>
-    <source_id keyed_name="z_DraftModel" type="ItemType" name="z_DraftModel">FC5E69D8BAB34B55B17A06D43FAB0128</source_id>
    </Item>
    <Item type="Item Action" id="8564219035A14E818B0B398666741301" action="add">
     <related_id keyed_name="VC_AddItemsToBookmarks" type="Action">FD4D2BE9E2B14919BF1973842A556AFD</related_id>
