@@ -1,166 +1,260 @@
 ﻿<AML>
  <Item type="Method" id="F43339C68EEE4ADE9CA31576FD8BEAD6" action="add">
   <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
-  <method_code><![CDATA[	//**************************************************************************************
-	// 名称：
-	//   
-	// 概要：
-	//   
-	// 
-	//   訂符     Ver.     作成日(修正日)       内容
-	//
-	//
-	//*************************************************************************************
-// 	 System.Diagnostics.Debugger.Break();
-	inn = this.getInnovator();
-	string result = "";
+  <method_code><![CDATA[            //**************************************************************************************
+            // 名称：
+            //   
+            // 概要：
+            //   
+            // 
+            //   訂符     Ver.     作成日(修正日)       内容
+            //
+            //
+            //*************************************************************************************
+            //System.Diagnostics.Debugger.Break();
+            inn = this.getInnovator();
+            string result = "";
 
-	try {
-		// パラメタ処理
-		model_id = this.getID();
-		//テンプレートの取得
-		string template = this.GetBaseTamplate();
-		//ツリーデータの取得
-		Item items = this.GetAllItems();
-		if (items.isError()){
-			return inn.newError(items.getErrorString());
-		}
-		string data = SetDataToDict(items);
-	    result = template + data + "</table>";
-		return inn.newResult(result);
-	}
-	catch (Exception e) {
-		return inn.newError(e.Message);
-	}
-}
-private Innovator inn = null;
-private string model_id;      //Model
-
-private Item GetAllItems(){
-	Item items = null;
-	try {
-		items = inn.newItem("SQL", "SQL PROCESS");
-		items.setProperty("name", "z_GetSubSystemTreeData");
-		items.setProperty("PROCESS", "CALL");
-		items.setProperty("ARG1", model_id);
-		items =items.apply();
-	}
-	catch {
-		throw;
-	}
-	return items;
-}
-
-private string GetBaseTamplate(){
-    StringBuilder gridStyle = new StringBuilder();
-    gridStyle.Append("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
-	gridStyle.Append("<table delim=\"|\" ");
-	gridStyle.Append(" font=\"Microsoft Sans Serif-8\"");
-	gridStyle.Append(" sel_bgColor=\"steelbue\"");
-	gridStyle.Append(" sel_TextColor=\"white\"");
-	gridStyle.Append(" header_BgColor=\"buttonface\"");
-	gridStyle.Append(" expandroot=\"false\"");
-	gridStyle.Append(" expandall=\"false\"");
-	gridStyle.Append(" treelines=\"1\"");
-	gridStyle.Append(" editable=\"true\"");
-	gridStyle.Append(" draw_grid=\"false\"");
-	gridStyle.Append(" multiselect=\"false\"");
-	gridStyle.Append(" column_draggable=\"true\"");
-	gridStyle.Append(" enableHtml=\"false\"");
-	gridStyle.Append(" enterAsTab=\"false\"");
-	gridStyle.Append(" bgInvert=\"false\"");
-	gridStyle.Append(" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\"");
-	gridStyle.Append(" xmlns:aras=\"http://www.aras.com\"");
-	gridStyle.Append(" xmlns:usr=\"urn:the-xml-files:xslt\">");
-	gridStyle.Append(" <thead>");
-    gridStyle.Append("  <th align=\"c\">Sub System</th>");
-    gridStyle.Append("  <th align=\"c\">Image</th>");
-	gridStyle.Append(" </thead>");
-	gridStyle.Append(" <columns>");
-	gridStyle.Append("  <column width=\"600\" edit=\"\"  align=\"l\" order=\"0\" />");
-    gridStyle.Append("  <column width=\"200\" edit=\"\"  align=\"l\" order=\"1\" />");
-	gridStyle.Append(" </columns>");
-	gridStyle.Append(" <menu>");
-	gridStyle.Append(" 	<emptytag/>");
-	gridStyle.Append(" </menu>");
-    return gridStyle.ToString();
-}
-
-private string SetDataToDict(Item items){
-    
-    StringBuilder itemString = new StringBuilder();
-    
-    for (int i = 0; i < items.getItemCount(); i++){
-		Item item =  items.getItemByIndex(i);
-		
-		int lv = 0;
-        int nextlv =0;
-        if (!Int32.TryParse(item.getProperty("level", ""), out lv))
-        {
-            lv = 0;
+            try
+            {
+                // パラメタ処理
+                model_id = this.getID();
+                //テンプレートの取得
+                string template = this.GetBaseTamplate();
+                //ツリーデータの取得
+                Item items = this.GetAllItems();
+                if (items.isError())
+                {
+                    return inn.newError(items.getErrorString());
+                }
+                string data = SetDataToDict();
+                result = template + data + "</table>";
+                return inn.newResult(result);
+            }
+            catch (Exception e)
+            {
+                return inn.newError(e.Message);
+            }
         }
 
-		itemString.Append("<tr level=\"").Append(Escape(GetIntFromString(item.getProperty("level", ""),0).ToString()));
-		itemString.Append("\" icon0=\"../images/Part.svg\" icon1=\"../images/Part.svg\">");
-		itemString.Append("<userdata key=\"gridData_rowItemID\" value=\"").Append(Escape(item.getProperty("id", ""))).Append("\" />");
 
- 
- 		itemString.Append("<td id=\"").Append(Escape(item.getProperty("id","")));
-		itemString.Append("\" link=\"'").Append("z_Draftmodel Subsystem").Append("','").Append(Escape(item.getProperty("id",""))).Append("'\"");
-		itemString.Append(">").Append(Escape(item.getProperty("z_subsystem", ""))).Append("</td>");
-		
- 		itemString.Append("<td id=\"").Append(Escape(item.getProperty("z_image_file","")));
-		itemString.Append("\" link=\"'").Append("File").Append("','").Append(Escape(item.getProperty("z_image_file",""))).Append("'\"");
-		itemString.Append(">").Append(Escape(item.getProperty("filename", ""))).Append("</td>");
+        private Innovator inn = null;
+        private string model_id;      //Model
+        private Dictionary<string, Item> dictItemProp = new Dictionary<string, Item>();
 
-        //itemString.Append(CreateTD(Escape(item.getProperty("z_image_file", ""))));
-		// next level
-		if (i!= items.getItemCount() - 1){
-            if (!Int32.TryParse(items.getItemByIndex(i+1).getProperty("level", ""), out nextlv)){
-                nextlv = 0;
+        private Item GetAllItems()
+        {
+            try
+            {
+                Item topItem = inn.newItem("z_DraftModel SubSystem", "get");
+                topItem.setProperty("source_id", model_id);
+                topItem.setProperty("z_index_no", "1");
+                topItem = topItem.apply();
+                if (topItem.isError())
+                {
+                    if (topItem.isEmpty())
+                    {
+                        return inn.newResult("");
+                    }
+                    else
+                    {
+                        return inn.newError(topItem.getErrorString());
+                    }
+
+                }
+
+                //IndexNoが1(構成top)のサブシステムが複数ある場合は、最上位のものを取得する
+                if (topItem.getItemCount() >= 1)
+                {
+                    topItem = topItem.getItemByIndex(0);
+                }
+
+                topItem.setProperty("root", topItem.getProperty("z_subsystem_name"));
+                topItem.setProperty("level", "1");
+
+                dictItemProp.Add(topItem.getProperty("z_subsystem_name", ""), topItem);
+
+                Item relItem = inn.newItem("z_DraftModel SubSystem", "get");
+                relItem.setProperty("source_id", model_id);
+                relItem.setAttribute("orderBy", "z_index_no");
+                relItem = relItem.apply();
+                if (relItem.isError())
+                {
+                    return inn.newError(relItem.getErrorString());
+                }
+
+                for (int i = 0; i < relItem.getItemCount(); i++)
+                {
+                    string root;
+                    int level;
+
+                    Item getItm = null;
+                    Item wkRel = relItem.getItemByIndex(i);
+                    string parentName = wkRel.getProperty("z_parent_subsystem", "");
+                    if (string.IsNullOrEmpty(parentName))
+                    {
+                        continue;
+                    }
+
+                    dictItemProp.TryGetValue(parentName, out getItm);
+                    if (getItm != null)
+                    {
+                        root = getItm.getProperty("root");
+                        root = root + "/" + wkRel.getProperty("z_subsystem_name");
+                        if (!Int32.TryParse(getItm.getProperty("level", ""), out level))
+                        {
+                            level = 0;
+                        }
+                        level += 1;
+
+                        wkRel.setProperty("root", root);
+                        wkRel.setProperty("level", level.ToString());
+
+                        dictItemProp.Add(wkRel.getProperty("z_subsystem_name", ""), wkRel);
+
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+
             }
-		}
-		else{
-            if (!Int32.TryParse(items.getItemByIndex(0).getProperty("level", ""), out nextlv)){
-                nextlv = 0;
+            catch
+            {
+                throw;
             }
-		}
-		if (nextlv <= lv){
-			int trCnt = lv - nextlv +1;
-			for (int n=0;n<trCnt;n++){
-				itemString.Append("</tr>");
-			}
-		}
-	}
-    
-    return itemString.ToString();
-}
+            return inn.newResult("");
+        }
 
-private string CreateTD(string val)
-{
-	string tag = String.Empty;
-	if(String.IsNullOrEmpty(val))
-	{
-		tag = "<td />";
-	}
-	else
-	{
-		tag = String.Format("<td>{0}</td>",val);
-	}
-	return tag;
-}
+        private string GetBaseTamplate()
+        {
+            StringBuilder gridStyle = new StringBuilder();
+            gridStyle.Append("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+            gridStyle.Append("<table delim=\"|\" ");
+            gridStyle.Append(" font=\"Microsoft Sans Serif-8\"");
+            gridStyle.Append(" sel_bgColor=\"steelbue\"");
+            gridStyle.Append(" sel_TextColor=\"white\"");
+            gridStyle.Append(" header_BgColor=\"buttonface\"");
+            gridStyle.Append(" expandroot=\"false\"");
+            gridStyle.Append(" expandall=\"false\"");
+            gridStyle.Append(" treelines=\"1\"");
+            gridStyle.Append(" editable=\"true\"");
+            gridStyle.Append(" draw_grid=\"false\"");
+            gridStyle.Append(" multiselect=\"false\"");
+            gridStyle.Append(" column_draggable=\"true\"");
+            gridStyle.Append(" enableHtml=\"false\"");
+            gridStyle.Append(" enterAsTab=\"false\"");
+            gridStyle.Append(" bgInvert=\"false\"");
+            gridStyle.Append(" xmlns:msxsl=\"urn:schemas-microsoft-com:xslt\"");
+            gridStyle.Append(" xmlns:aras=\"http://www.aras.com\"");
+            gridStyle.Append(" xmlns:usr=\"urn:the-xml-files:xslt\">");
+            gridStyle.Append(" <thead>");
+            gridStyle.Append("  <th align=\"c\">Sub System</th>");
+            gridStyle.Append("  <th align=\"c\">Image</th>");
+            gridStyle.Append(" </thead>");
+            gridStyle.Append(" <columns>");
+            gridStyle.Append("  <column width=\"600\" edit=\"\"  align=\"l\" order=\"0\" />");
+            gridStyle.Append("  <column width=\"200\" edit=\"\"  align=\"l\" order=\"1\" />");
+            gridStyle.Append(" </columns>");
+            gridStyle.Append(" <menu>");
+            gridStyle.Append(" 	<emptytag/>");
+            gridStyle.Append(" </menu>");
+            return gridStyle.ToString();
+        }
+
+        private string SetDataToDict()
+        {
+            StringBuilder itemString = new StringBuilder();
+
+            if (dictItemProp != null && dictItemProp.Count != 0)
+            {
+                Item[] vals = new Item[dictItemProp.Values.Count];
+                dictItemProp.Values.CopyTo(vals, 0);
+
+                for (int i = 0; i <= vals.Length - 1; i++)
+                {
+                    Item item = vals[i];
+
+                    int lv = 0;
+                    int nextlv = 0;
+                    if (!Int32.TryParse(item.getProperty("level", ""), out lv))
+                    {
+                        lv = 0;
+                    }
+
+                    itemString.Append("<tr level=\"").Append(Escape(GetIntFromString(item.getProperty("level", ""), 0).ToString()));
+                    itemString.Append("\" icon0=\"../images/Part.svg\" icon1=\"../images/Part.svg\">");
+                    itemString.Append("<userdata key=\"gridData_rowItemID\" value=\"").Append(Escape(item.getProperty("id", ""))).Append("\" />");
 
 
-private int GetIntFromString(string strChange,int intDefault){
-	int result = intDefault;
-	if (!Int32.TryParse(strChange, out result)){
-		result = intDefault;
-	}
-	return result;
-}
+                    itemString.Append("<td id=\"").Append(Escape(item.getProperty("id", "")));
+                    itemString.Append("\" link=\"'").Append("z_Draftmodel Subsystem").Append("','").Append(Escape(item.getProperty("id", ""))).Append("'\"");
+                    itemString.Append(">").Append(Escape(item.getProperty("root", ""))).Append("</td>");
 
-private static string Escape(string data){
-	return System.Security.SecurityElement.Escape(data);
+                    itemString.Append("<td id=\"").Append(Escape(item.getProperty("z_image_file", "")));
+                    itemString.Append("\" link=\"'").Append("File").Append("','").Append(Escape(item.getProperty("z_image_file", ""))).Append("'\"");
+                    itemString.Append(">").Append(Escape(item.getPropertyAttribute("z_image_file", "keyed_name", ""))).Append("</td>");
+                    ;
+                    // next level
+                    if (i != vals.Length - 1)
+                    {
+                        if (!Int32.TryParse(vals[i + 1].getProperty("level", ""), out nextlv))
+                        {
+                            nextlv = 0;
+                        }
+                    }
+                    else
+                    {
+                        if (!Int32.TryParse(vals[0].getProperty("level", ""), out nextlv))
+                        {
+                            nextlv = 0;
+                        }
+                    }
+                    if (nextlv <= lv)
+                    {
+                        int trCnt = lv - nextlv + 1;
+                        for (int n = 0; n < trCnt; n++)
+                        {
+                            itemString.Append("</tr>");
+                        }
+                    }
+                }
+            }
+
+
+            return itemString.ToString();
+        }
+
+        private string CreateTD(string val)
+        {
+            string tag = String.Empty;
+            if (String.IsNullOrEmpty(val))
+            {
+                tag = "<td />";
+            }
+            else
+            {
+                tag = String.Format("<td>{0}</td>", val);
+            }
+            return tag;
+        }
+
+
+        private int GetIntFromString(string strChange, int intDefault)
+        {
+            int result = intDefault;
+            if (!Int32.TryParse(strChange, out result))
+            {
+                result = intDefault;
+            }
+            return result;
+        }
+
+        private static string Escape(string data)
+        {
+            return System.Security.SecurityElement.Escape(data);
+
 ]]></method_code>
   <method_type>C#</method_type>
   <name>z_CreateSubModelTreeData</name>
